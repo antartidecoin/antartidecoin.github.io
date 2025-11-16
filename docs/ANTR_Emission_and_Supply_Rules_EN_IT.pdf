@@ -1,253 +1,137 @@
-%PDF-1.4
-%âãÏÓ
+%PDF-1.3
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
 1 0 obj
-<< /Type /Catalog /Pages 2 0 R >>
+<<
+/F1 2 0 R /F2 3 0 R /F3 6 0 R
+>>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
 endobj
 4 0 obj
-<< /Length 7266 >>
-stream
-BT
-/F1 12 Tf
-72 800 Td
-(AntartideCoin \(ANTR\)  Emission & Supply Rules / Regole di Emissione e Supply) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(Version 1.0) Tj
-0 -14 Td
-(Last update / Ultimo aggiornamento: November 2025) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(EN  1. Purpose of this document) Tj
-0 -14 Td
-(This document provides a high-level overview of how AntartideCoin \(ANTR\) is created and) Tj
-0 -14 Td
-(distributed over time. It is not a formal prospectus but a transparency tool to help users) Tj
-0 -14 Td
-(understand the basic monetary rules of the network.) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(IT  1. Scopo di questo documento) Tj
-0 -14 Td
-(Questo documento offre una panoramica ad alto livello di come AntartideCoin \(ANTR\) viene) Tj
-0 -14 Td
-(creata e distribuita nel tempo. Non è un prospetto formale, ma uno strumento di) Tj
-0 -14 Td
-(trasparenza per aiutare gli utenti a comprendere le regole monetarie di base della rete.) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(EN  2. Target maximum supply) Tj
-0 -14 Td
-(The target maximum supply of ANTR is approximately 36.5 billion coins, based on the) Tj
-0 -14 Td
-(current block reward curve and planned reductions. This value is to be considered an) Tj
-0 -14 Td
-(indicative long-term goal rather than a rigid hard cap like Bitcoin.) Tj
-0 -14 Td
-(Changes to the emission curve, if any, will be announced in advance and documented.) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(IT  2. Supply massima target) Tj
-0 -14 Td
-(La supply massima target di ANTR è di circa 36,5 miliardi di monete, sulla base) Tj
-0 -14 Td
-(dellattuale curva di reward per blocco e delle riduzioni pianificate. Questo valore va) Tj
-0 -14 Td
-(considerato un obiettivo indicativo di lungo periodo e non un hard cap rigido come quello) Tj
-0 -14 Td
-(di Bitcoin.) Tj
-0 -14 Td
-(Eventuali modifiche alla curva di emissione saranno annunciate in anticipo e documentate.) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(EN  3. Premine / creator allocation) Tj
-0 -14 Td
-(At network launch, 1,500,000,000 ANTR were pre-mined and assigned to a limited number of) Tj
-0 -14 Td
-(wallets controlled by the creator. These coins are intended for:) Tj
-0 -14 Td
-( development and maintenance of the code;) Tj
-0 -14 Td
-( infrastructure, servers and security;) Tj
-0 -14 Td
-( future marketing and ecosystem incentives;) Tj
-0 -14 Td
-( project treasury and long-term sustainability.) Tj
-0 -14 Td
-(The main premine addresses and their movements will be described in dedicated transparency) Tj
-0 -14 Td
-(reports.) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(IT  3. Premine / dotazione del creatore) Tj
-0 -14 Td
-(Allavvio della rete sono stati pre-minati 1.500.000.000 ANTR e assegnati a un numero) Tj
-0 -14 Td
-(limitato di wallet controllati dal creatore. Queste monete sono destinate a:) Tj
-0 -14 Td
-( sviluppo e manutenzione del codice;) Tj
-0 -14 Td
-( infrastruttura, server e sicurezza;) Tj
-0 -14 Td
-( marketing futuro e incentivi per lecosistema;) Tj
-0 -14 Td
-( tesoreria del progetto e sostenibilità di lungo periodo.) Tj
-0 -14 Td
-(I principali indirizzi del premine e i loro movimenti saranno descritti in appositi report) Tj
-0 -14 Td
-(di trasparenza.) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(EN  4. Block rewards) Tj
-0 -14 Td
-(New ANTR are created through mining. Each valid block found by miners generates a block) Tj
-0 -14 Td
-(reward, which decreases over time according to parameters defined in the source code.) Tj
-0 -14 Td
-(The reduction is approximately every 6 years of network activity \(block-based\), with the) Tj
-0 -14 Td
-(goal of limiting inflation and favouring long-term stability.) Tj
-0 -14 Td
-(The exact parameters and formulas are technical and may be updated in the official code) Tj
-0 -14 Td
-(repository and technical documentation.) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(IT  4. Reward per blocco) Tj
-0 -14 Td
-(I nuovi ANTR vengono creati tramite il mining. Ogni blocco valido trovato dai miner genera) Tj
-0 -14 Td
-(una reward per blocco, che diminuisce nel tempo secondo parametri definiti nel codice) Tj
-0 -14 Td
-(sorgente.) Tj
-0 -14 Td
-(La riduzione avviene indicativamente ogni 6 anni di attività della rete \(in base ai) Tj
-0 -14 Td
-(blocchi\), con lobiettivo di limitare linflazione e favorire una maggiore stabilità nel) Tj
-0 -14 Td
-(lungo periodo.) Tj
-0 -14 Td
-(I parametri e le formule esatte sono di natura tecnica e potranno essere aggiornati nel) Tj
-0 -14 Td
-(repository ufficiale del codice e nella documentazione tecnica.) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(EN  5. Official pool dev fee) Tj
-0 -14 Td
-(The official mining pool applies a development fee of about 1% on mined blocks. This fee) Tj
-0 -14 Td
-(does not increase the total supply: it simply redirects a small portion of each block) Tj
-0 -14 Td
-(reward from miners to the projects infrastructure and treasury.) Tj
-0 -14 Td
-(Other pools, if created by third parties, may apply different fee levels that are outside) Tj
-0 -14 Td
-(the control of the AntartideCoin creator.) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(IT  5. Dev fee della pool ufficiale) Tj
-0 -14 Td
-(La pool di mining ufficiale applica una development fee di circa l1% sui blocchi minati.) Tj
-0 -14 Td
-(Questa fee non aumenta la supply totale: semplicemente ridistribuisce una piccola parte) Tj
-0 -14 Td
-(della reward di ciascun blocco dai miner verso linfrastruttura e la tesoreria del) Tj
-0 -14 Td
-(progetto.) Tj
-0 -14 Td
-(Altre pool, se create da terzi, potranno applicare livelli di fee differenti che non) Tj
-0 -14 Td
-(rientrano nel controllo del creatore di AntartideCoin.) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(EN  6. Planned hard fork on supply) Tj
-0 -14 Td
-(A planned flag-day hard fork is foreseen when the total mined supply reaches specific) Tj
-0 -14 Td
-(milestones \(for example around 1,000,000,000 ANTR\). The aim is to further reduce future) Tj
-0 -14 Td
-(rewards and make the emission curve more conservative in the long term.) Tj
-0 -14 Td
-(Any hard fork will be announced with adequate notice, and updated binaries will be) Tj
-0 -14 Td
-(released for nodes, pools and wallets.) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(IT  6. Hard fork pianificato sulla supply) Tj
-0 -14 Td
-(È previsto un hard fork flag-day quando la supply totale minata raggiungerà determinate) Tj
-0 -14 Td
-(soglie \(ad esempio intorno a 1.000.000.000 ANTR\). Lobiettivo è ridurre ulteriormente le) Tj
-0 -14 Td
-(reward future e rendere la curva di emissione più prudente nel lungo periodo.) Tj
-0 -14 Td
-(Ogni hard fork sarà annunciato con adeguato preavviso e verranno rilasciati i binari) Tj
-0 -14 Td
-(aggiornati per nodi, pool e wallet.) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(EN  7. Disclaimer) Tj
-0 -14 Td
-(This document is for information and transparency only. It does not constitute financial,) Tj
-0 -14 Td
-(legal or tax advice and does not represent an offer or solicitation to invest in) Tj
-0 -14 Td
-(AntartideCoin.) Tj
-0 -14 Td
-(Users should always perform their own research and respect the regulations of their) Tj
-0 -14 Td
-(country.) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(IT  7. Disclaimer) Tj
-0 -14 Td
-(Questo documento ha esclusivamente finalità informative e di trasparenza. Non costituisce) Tj
-0 -14 Td
-(consulenza finanziaria, legale o fiscale e non rappresenta unofferta o sollecitazione ad) Tj
-0 -14 Td
-(investire in AntartideCoin.) Tj
-0 -14 Td
-(Gli utenti devono sempre svolgere le proprie verifiche e rispettare le normative del) Tj
-0 -14 Td
-(proprio Paese.) Tj
-0 -14 Td
-() Tj
-ET
-endstream
+<<
+/Contents 12 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 11 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 5 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+<<
+/Contents 13 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 11 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+6 0 obj
+<<
+/BaseFont /Symbol /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+7 0 obj
+<<
+/Contents 14 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 11 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+8 0 obj
+<<
+/Contents 15 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 11 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+9 0 obj
+<<
+/PageMode /UseNone /Pages 11 0 R /Type /Catalog
+>>
+endobj
+10 0 obj
+<<
+/Author (anonymous) /CreationDate (D:20251116231948+00'00') /Creator (ReportLab PDF Library - www.reportlab.com) /Keywords () /ModDate (D:20251116231948+00'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (unspecified) /Title (untitled) /Trapped /False
+>>
+endobj
+11 0 obj
+<<
+/Count 4 /Kids [ 4 0 R 5 0 R 7 0 R 8 0 R ] /Type /Pages
+>>
+endobj
+12 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1759
+>>
+stream
+Gat%#9p=:#&A@7.oHbrV!Z<.F2^d@b.pJ9ZOu5`^K/CBrUM87l"=Ap%p2l@kA],cNW@_LZ8DQH-qRq=s_jGm^s.8?Qn(7(&;[i1!eiS\cd1k0H_oME\rqZcW-"!:_dJS#JDF,m$YaDVgj`3dKjY1plS?Pb"ncL?DS&)__l_i!s2mE8gl^u(^;kIhH/T8\"c7Uh9k,KsI)YaWQ<(3M,n5O+)_HV8JHdiZ`"mnGcA:)d;nF?,)a7[XBFOJfS:SPtulu="UrsYC=A.F[?=j3nq;3l+<i5tdE\NIDdW"LjZX'?PJKuG;0V$$f([6KVW4A$'-PkM':$#g.;5h3>V[=#n93-7JS=eA6P$rSU06VHD%<]]XYD1=F$=-8?td/fM(@6b]VcNPDPEYaolYbZTm1oYP9L96-/aFobF0--S*AH_Jo8XrGXElXN.:XWV"4FgI2Us]94nqSitX]FP7K,[G9'V&(;;2TYK+*/>#p:0Mjp,>c9s-&WHYeMY;#+m&+!bH$/^d^R4$sJdo<5;fYBa'QgeF[XNB<]?M%fKJ'L!=,KK1T-Kh"hBs#FP#`%H%j+l>7W!^JQc9#\Aks?@Y-^AM)9^9em`A/5&QS`."o:)@?h+i]EPE(r7SnH>AtO!m"!FT;#FV=KB#-6>Pl]Us_(/U'4INRKR7Q*-^CB35$fs:nY%QGlVn*_0]%ZPb91-Unb#e#_1ET=N,f,74J6qq.J1;-2F`#os\ZKZt`"IfV;I7O?^OIe=I'"s'Vcc,9#Et4/\+%B_Pfo<W5*T_X=7IJ:E`-1kVpYR[M'Gcl7>C>(j0<CJ;Ljgn'2D*bZsI_FeD5(IlkaPti*i$r7(JUbTM_d4kDPl)D<j5p))&5(M9pja`TASm`+A.1!<*@*8_5(p3.2SoE#7i/c\hV2Bs6;:ETNB?fKLG#GcjiZJ%BL0LO?NE7GTI!i60JT[!V@Qf]4*Gb@K/kA-]5;g6C'+'`mE!El$MYcQF]8Lm=l?)<jL4T#M4.T9#,T`?t*NIZ[U&tOQLRY-9*Ip55,g4K?5H.+i>NE[XUrnjFinc(M?5WOk%&aU&0F1Z[G#7pr/NO=9[>$]_dAX4?LT6aPfd=ESKE!&Q8J9rCM;Z;%lJ2m.iG:UtNp@M:p,]Aa:(ja:$I2YSrhbY7cu@'=ImAIW].=Gj1H$>WS<.DolBaZkqsl"_>:1hA#"Ktk1CK*UR=T':XX;5aDiLro([WnH8El/4iT90L;G[k8-<[?3k8%=.7^F2!m,kP4e=#rbe$ff/qQ!_?8EOH/0Ksp)`X</mb*qV:RsgR$qkZO0XMZGiYZ@"6P,qZLRpq11jOSSJL*45IRLX+g5l6kViTACUaO:WQG*S,U$i>pp7@NR++6Ii[<8F--ToomO)P>G!%NNZ>A^C<5C(am(]7%RVktYGE('N;VC*n<iJ>3h3J!!+@i'cKq=-?@TNpm[(1_<]TP(&`E4^Ul<T9]Mo<o!XgkUec##-bIOLD0&C5>NXKX6H3c,=]k8INs1.(HII6Lb,lKN(U,KM#&O+rr0k->Pk./60Qkq,>82S49jr.-+u[tN8Q&`^%om.0X\'l4+_@2,@YIGY$VWJSWfpkMOU(c-XTl73!o*0$u2V<R`Kp=@#;O4I;:4RSFooCXDF*E`jB2Ka``_KcMs<"%(T8AR6C-;;4&MRj,taYNnn&CW/.1?ipjOrSar^9eVhXo@LG)C)ekd&m&/+NZXtr,k-cK]MON;"O4s>q]i]C9?7>22ddt"eS`dWk"2PNJ!]+YJ*<~>endstream
+endobj
+13 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 330
+>>
+stream
+GarnQ9hPRC&A@g>]V>h:9tKY.YC_Aa1#@3_]@/M]R4N('O8aH<McpXV^b@lWhT$HaopO:q,OjW1pLIY_g_QciC:G'B]#>1t:ACipBA@l-Zki'-]'?kL#8_B&MaE2`.C7'TKX),AJHEi]G#V)6Y2T(n2]$S)k#^_$Tf-PYk?3rl$XpAVQKh=<VNS`HG96l$oLVYM+o&nkHpF=G(X6"><A:4tMBr%,@$L!gUX(2UNs"XD4:oBL>"]rIQj`kbgU?9Idrrntc_X.S;%)[n6kV>=f0D&c_W>k4N(LLCeJ5/c=F)$:@*LoTk2VShcLR8fiP.=hiX=bkJlM~>endstream
+endobj
+14 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 2039
+>>
+stream
+Gau0D9on$e&A@7.bb`+PE#a<$1HfU/":.i2C$OQ&iC^K%KG%:JZIf!>qhDDiP'<`ZBSmpJ_3W/$1N2D=.]*LOip\lWLu,;up%t-9KN9%L-fYN8I\h7h(ZG8Pg$dtM'(^e=ZfQG:=>"8ecqQQu3*N6%S20&HY>"?*elpL;qBWO>Mt=-;[%oNi<XNcHHqCBb[/0<u.DWl1dr_*B^ZdS(h"9E@Zqce;ZTEA4DQf/!O"7:?<RuD_H1F$gR44$)<;oF_bfS#?c=H^d.eeY@L0U;4ZK,<?]Ik[hMohoC[#$1^TtDUg_Ufa%[5k1+97*H"dL1Eg7i&QHqHQ^4qB(]oQUd[]@CC"6m1k%7O@j2>\<0gXLpF;nJ(HV$U\.9Q[WME$lI-]0`_dGho^8nYTlg2YDGk&K1?$biP#fkLGiAJkbAf2RfmMXGY\N:$&4^b=CT<'\S7^&OAS%Q-8HK4Z]hD"pe42Rd:]S3qm%kG$M5T_Wkt_=f`G?nB#u=_3k=P:JR^IrJb/9W:>4/6L3Wb;bc\2Ll]eZttLaGike,@PAj\kqk4IClFZCQ_S:Q2fiGF)-mj<188+JLjliLD-8.cWNjG<uZOF$saod?)gjK^/+-:q1sJkp(Om\BFun5R^5>9Q-al81r'$FQ.8q5Rn,ePf>Z0R&5[6nHQFZ3iokDOUQfO,4B)DH^*^]piM_39.,?O\4;f0aBMM&/nsS7J=Nc\7"sL4<sA"8;&FE<LoT00`lV(2T]rc$RT:LQD9Cp,Q(Q?g_`^&O[EA!:.OqPY$Lm/j_"Bte:T'b0J103]:"QPoP9_u.=Q9#NoP2V,XHVo8o\9$E^7i-t-FdY$7T7EsG"1XZog;C8:SBoqqle?Lpp:-3YJCYJ9%#);/pR0ers@($8;]2GrW#B]Y>Ac8Cf+`N;m&u#I-/kVD;!,`TlJb'$cl<,citB/&$e7'M;O"+ZmiJf]X.k0UsOPqR(935Zjh7qkCkD)S^L?R?JL`5Mh%_YFN\.V<A&bZke@`d_UpO?ThhO;U3p'#_Yt#$TtOFZ)R1CSON40Dk^:6NNtTd=T%=`b@o3MZ[Sqp$FV/iKG![!KZem:27d[n2.K2nV97bKBLF_V;ZU6sYUfBK([l'&ZJe^V*4#!0Y,u@0]MR^F]-ZM7BP]YUC]8ouV4G;q"K&Wg4HQ/93#K>0a,l;5.L[:(nPPqLajYHMGJgUXS2#5QgVrp7NnlXH.FI(9[Q8sm0e]9,-!6JA/>*/Y3jMZ<5TNHNFj&tb'GmsXWK;XH>F$`sL]W#Ba/Pqmb<,MXB-a?Zo\RiO,j;9#5Z8MtcUL@Orc6PO&R[]7[b[_d;391@N@7QDSV]CU=ZRs`#[]2Q)!)a*c<"ZFOmXQ/XQ-<GIISALP$uYL2Bf]u$18Ym-_!u""#C"N[)i,p,>!4AqSQ?DW[W?SW8\j#KDL7Y95B=(rU2+Jpkp-V`.O<`uqHV\S!-*d5^N2`2"iP[hJ]h<*4'FH[@6cZh6*P8U%'g0)E,lFnBP*c952:O""Ymlrr#&VjD]b/(Z=C;,akI7^`04a%'p#!2gLh`YM[GHZ+7(43@K#dCR<E.&%"ReY+>sQ9-0PZ'6:k9_qW0c+UecMh8,Jsm<DRQCTLkI$BJ*]4hn_B:$]!BZ\og')csDP0I`,UR8(?P=+16d/TB-<Y8*K?g1$uNlEU(EB?q&gb80+(9\PL+V\[5%b0#b^F2%\CPBsnn`&'^aWC?ohHO_(J2BUE,qnY/H;<Y`hf6g"Yf`5"upALjpHnLn3P`7#Ko-=clU\uu;0coQJI[sOVo!VkX.?VJE*1Xu6>`8g.]J]I@48!f^HApqZ&S/NK:OCr5X],5E3SFA5\O`%_Kr5+lBMgMtB4c[;;/(]L*@++.bFcuZq=lqNTmXT'G@u=G]WZ<2MZ-<bJT.^9o<=-^_:6OLn\DRhkpl-p]a4Mp%lmK+[%oV6=1LdN;R[J5M*+VSsS>AGZjO(*LM2W\JKsV,F2kL7E7oNVILCu*uE"p?*p8[$W-S)j0.@?]ULZ!/j32q_Y`n94029pD_im<U5!,7<^/c~>endstream
+endobj
+15 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 414
+>>
+stream
+Garo<btc/1&;9L7`>enYThYqHa+?QC6:`4@F0UmF=VQ48A+u(_B?cL[!>NZ0STnd2YJF+$o6GL#\?WQR2_[,U%VA_C?lsB$:O[EWWAdh*eBPJA]#OU3]%Uu'2m=@$%i0"f?X\:@:eVR83eMj54o]$[dN%GA1JLHf9:%dFXb$[t1*o\`ViJ+o;]aH8@E63<R9a@4^d*6*&4G'Je#L8C,Sq-gF=S?X2O@(tJ2,3<;Nh'"Re78*)C]\-.Gf`LoI1JI9MR_>4?IDg:\I5fr$X9[7*U3m[&4-H>e-*QB!p.96*k9sAasgf;&?b&"ZUU88a?"6<S\XoJjcfn#M5PIGR1pb()(sf:cEX`"YM//i^LE$'#-a@YBPqfgLb<L1Z#GgHQKMl9$usF'SadaD0p\Jons/)+6O08WW~>endstream
 endobj
 xref
-0 6
+0 16
 0000000000 65535 f 
-0000000015 00000 n 
-0000000064 00000 n 
-0000000121 00000 n 
-0000000247 00000 n 
-0000007565 00000 n 
+0000000073 00000 n 
+0000000124 00000 n 
+0000000231 00000 n 
+0000000343 00000 n 
+0000000548 00000 n 
+0000000753 00000 n 
+0000000830 00000 n 
+0000001035 00000 n 
+0000001240 00000 n 
+0000001309 00000 n 
+0000001606 00000 n 
+0000001684 00000 n 
+0000003535 00000 n 
+0000003956 00000 n 
+0000006087 00000 n 
 trailer
-<< /Size 6 /Root 1 0 R >>
+<<
+/ID 
+[<95ead90d611a6393f602af30706ee2a0><95ead90d611a6393f602af30706ee2a0>]
+% ReportLab generated PDF document -- digest (http://www.reportlab.com)
+
+/Info 10 0 R
+/Root 9 0 R
+/Size 16
+>>
 startxref
-7635
+6592
 %%EOF
