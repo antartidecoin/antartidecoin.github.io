@@ -1,0 +1,253 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 7266 >>
+stream
+BT
+/F1 12 Tf
+72 800 Td
+(AntartideCoin \(ANTR\)  Emission & Supply Rules / Regole di Emissione e Supply) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(Version 1.0) Tj
+0 -14 Td
+(Last update / Ultimo aggiornamento: November 2025) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(EN  1. Purpose of this document) Tj
+0 -14 Td
+(This document provides a high-level overview of how AntartideCoin \(ANTR\) is created and) Tj
+0 -14 Td
+(distributed over time. It is not a formal prospectus but a transparency tool to help users) Tj
+0 -14 Td
+(understand the basic monetary rules of the network.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(IT  1. Scopo di questo documento) Tj
+0 -14 Td
+(Questo documento offre una panoramica ad alto livello di come AntartideCoin \(ANTR\) viene) Tj
+0 -14 Td
+(creata e distribuita nel tempo. Non Ë un prospetto formale, ma uno strumento di) Tj
+0 -14 Td
+(trasparenza per aiutare gli utenti a comprendere le regole monetarie di base della rete.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(EN  2. Target maximum supply) Tj
+0 -14 Td
+(The target maximum supply of ANTR is approximately 36.5 billion coins, based on the) Tj
+0 -14 Td
+(current block reward curve and planned reductions. This value is to be considered an) Tj
+0 -14 Td
+(indicative long-term goal rather than a rigid hard cap like Bitcoin.) Tj
+0 -14 Td
+(Changes to the emission curve, if any, will be announced in advance and documented.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(IT  2. Supply massima target) Tj
+0 -14 Td
+(La supply massima target di ANTR Ë di circa 36,5 miliardi di monete, sulla base) Tj
+0 -14 Td
+(dellattuale curva di reward per blocco e delle riduzioni pianificate. Questo valore va) Tj
+0 -14 Td
+(considerato un obiettivo indicativo di lungo periodo e non un hard cap rigido come quello) Tj
+0 -14 Td
+(di Bitcoin.) Tj
+0 -14 Td
+(Eventuali modifiche alla curva di emissione saranno annunciate in anticipo e documentate.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(EN  3. Premine / creator allocation) Tj
+0 -14 Td
+(At network launch, 1,500,000,000 ANTR were pre-mined and assigned to a limited number of) Tj
+0 -14 Td
+(wallets controlled by the creator. These coins are intended for:) Tj
+0 -14 Td
+( development and maintenance of the code;) Tj
+0 -14 Td
+( infrastructure, servers and security;) Tj
+0 -14 Td
+( future marketing and ecosystem incentives;) Tj
+0 -14 Td
+( project treasury and long-term sustainability.) Tj
+0 -14 Td
+(The main premine addresses and their movements will be described in dedicated transparency) Tj
+0 -14 Td
+(reports.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(IT  3. Premine / dotazione del creatore) Tj
+0 -14 Td
+(Allavvio della rete sono stati pre-minati 1.500.000.000 ANTR e assegnati a un numero) Tj
+0 -14 Td
+(limitato di wallet controllati dal creatore. Queste monete sono destinate a:) Tj
+0 -14 Td
+( sviluppo e manutenzione del codice;) Tj
+0 -14 Td
+( infrastruttura, server e sicurezza;) Tj
+0 -14 Td
+( marketing futuro e incentivi per lecosistema;) Tj
+0 -14 Td
+( tesoreria del progetto e sostenibilit‡ di lungo periodo.) Tj
+0 -14 Td
+(I principali indirizzi del premine e i loro movimenti saranno descritti in appositi report) Tj
+0 -14 Td
+(di trasparenza.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(EN  4. Block rewards) Tj
+0 -14 Td
+(New ANTR are created through mining. Each valid block found by miners generates a block) Tj
+0 -14 Td
+(reward, which decreases over time according to parameters defined in the source code.) Tj
+0 -14 Td
+(The reduction is approximately every 6 years of network activity \(block-based\), with the) Tj
+0 -14 Td
+(goal of limiting inflation and favouring long-term stability.) Tj
+0 -14 Td
+(The exact parameters and formulas are technical and may be updated in the official code) Tj
+0 -14 Td
+(repository and technical documentation.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(IT  4. Reward per blocco) Tj
+0 -14 Td
+(I nuovi ANTR vengono creati tramite il mining. Ogni blocco valido trovato dai miner genera) Tj
+0 -14 Td
+(una reward per blocco, che diminuisce nel tempo secondo parametri definiti nel codice) Tj
+0 -14 Td
+(sorgente.) Tj
+0 -14 Td
+(La riduzione avviene indicativamente ogni 6 anni di attivit‡ della rete \(in base ai) Tj
+0 -14 Td
+(blocchi\), con lobiettivo di limitare linflazione e favorire una maggiore stabilit‡ nel) Tj
+0 -14 Td
+(lungo periodo.) Tj
+0 -14 Td
+(I parametri e le formule esatte sono di natura tecnica e potranno essere aggiornati nel) Tj
+0 -14 Td
+(repository ufficiale del codice e nella documentazione tecnica.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(EN  5. Official pool dev fee) Tj
+0 -14 Td
+(The official mining pool applies a development fee of about 1% on mined blocks. This fee) Tj
+0 -14 Td
+(does not increase the total supply: it simply redirects a small portion of each block) Tj
+0 -14 Td
+(reward from miners to the projects infrastructure and treasury.) Tj
+0 -14 Td
+(Other pools, if created by third parties, may apply different fee levels that are outside) Tj
+0 -14 Td
+(the control of the AntartideCoin creator.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(IT  5. Dev fee della pool ufficiale) Tj
+0 -14 Td
+(La pool di mining ufficiale applica una development fee di circa l1% sui blocchi minati.) Tj
+0 -14 Td
+(Questa fee non aumenta la supply totale: semplicemente ridistribuisce una piccola parte) Tj
+0 -14 Td
+(della reward di ciascun blocco dai miner verso linfrastruttura e la tesoreria del) Tj
+0 -14 Td
+(progetto.) Tj
+0 -14 Td
+(Altre pool, se create da terzi, potranno applicare livelli di fee differenti che non) Tj
+0 -14 Td
+(rientrano nel controllo del creatore di AntartideCoin.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(EN  6. Planned hard fork on supply) Tj
+0 -14 Td
+(A planned flag-day hard fork is foreseen when the total mined supply reaches specific) Tj
+0 -14 Td
+(milestones \(for example around 1,000,000,000 ANTR\). The aim is to further reduce future) Tj
+0 -14 Td
+(rewards and make the emission curve more conservative in the long term.) Tj
+0 -14 Td
+(Any hard fork will be announced with adequate notice, and updated binaries will be) Tj
+0 -14 Td
+(released for nodes, pools and wallets.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(IT  6. Hard fork pianificato sulla supply) Tj
+0 -14 Td
+(» previsto un hard fork flag-day quando la supply totale minata raggiunger‡ determinate) Tj
+0 -14 Td
+(soglie \(ad esempio intorno a 1.000.000.000 ANTR\). Lobiettivo Ë ridurre ulteriormente le) Tj
+0 -14 Td
+(reward future e rendere la curva di emissione pi˘ prudente nel lungo periodo.) Tj
+0 -14 Td
+(Ogni hard fork sar‡ annunciato con adeguato preavviso e verranno rilasciati i binari) Tj
+0 -14 Td
+(aggiornati per nodi, pool e wallet.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(EN  7. Disclaimer) Tj
+0 -14 Td
+(This document is for information and transparency only. It does not constitute financial,) Tj
+0 -14 Td
+(legal or tax advice and does not represent an offer or solicitation to invest in) Tj
+0 -14 Td
+(AntartideCoin.) Tj
+0 -14 Td
+(Users should always perform their own research and respect the regulations of their) Tj
+0 -14 Td
+(country.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(IT  7. Disclaimer) Tj
+0 -14 Td
+(Questo documento ha esclusivamente finalit‡ informative e di trasparenza. Non costituisce) Tj
+0 -14 Td
+(consulenza finanziaria, legale o fiscale e non rappresenta unofferta o sollecitazione ad) Tj
+0 -14 Td
+(investire in AntartideCoin.) Tj
+0 -14 Td
+(Gli utenti devono sempre svolgere le proprie verifiche e rispettare le normative del) Tj
+0 -14 Td
+(proprio Paese.) Tj
+0 -14 Td
+() Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000247 00000 n 
+0000007565 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+7635
+%%EOF

@@ -1,0 +1,259 @@
+%PDF-1.4
+%âãÏÓ
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 6392 >>
+stream
+BT
+/F1 12 Tf
+72 800 Td
+(AntartideCoin  Official Mining Pool Rules / Regolamento Pool Ufficiale) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(Version 1.0) Tj
+0 -14 Td
+(Last update / Ultimo aggiornamento: November 2025) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(EN  1. Identity and scope) Tj
+0 -14 Td
+(This document describes the basic rules of the official AntartideCoin \(ANTR\) mining pool.) Tj
+0 -14 Td
+(It applies only to the pool operated at the following address:) Tj
+0 -14 Td
+( URL: https://pool.antartidecoin.org) Tj
+0 -14 Td
+(Coin: AntartideCoin \(ANTR\), Scrypt, Proof-of-Work.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(IT  1. Identità e ambito) Tj
+0 -14 Td
+(Questo documento descrive le regole di base della pool di mining ufficiale di) Tj
+0 -14 Td
+(AntartideCoin \(ANTR\).) Tj
+0 -14 Td
+(Si applica esclusivamente alla pool gestita al seguente indirizzo:) Tj
+0 -14 Td
+( URL: https://pool.antartidecoin.org) Tj
+0 -14 Td
+(Coin: AntartideCoin \(ANTR\), Scrypt, Proof-of-Work.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(EN  2. Connection parameters \(example\)) Tj
+0 -14 Td
+(The official pool offers several Stratum ports, typically including:) Tj
+0 -14 Td
+( Port 3333  VarDiff for standard miners \(GPU / small ASIC\).) Tj
+0 -14 Td
+( Port 3433  VarDiff with lower difficulty \(when enabled\).) Tj
+0 -14 Td
+( Port 3533  High-difficulty port for powerful ASICs.) Tj
+0 -14 Td
+(Exact settings can be checked on the pools web interface.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(IT  2. Parametri di connessione \(esempio\)) Tj
+0 -14 Td
+(La pool ufficiale offre diverse porte Stratum, tipicamente tra cui:) Tj
+0 -14 Td
+( Porta 3333  VarDiff per miner standard \(GPU / ASIC piccoli\).) Tj
+0 -14 Td
+( Porta 3433  VarDiff con difficoltà più bassa \(quando attiva\).) Tj
+0 -14 Td
+( Porta 3533  Porta ad alta difficoltà per ASIC potenti.) Tj
+0 -14 Td
+(Le impostazioni esatte sono consultabili nellinterfaccia web della pool.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(EN  3. Payout scheme) Tj
+0 -14 Td
+(The pool uses a standard reward scheme \(for example PPLNS or similar\) aimed at balancing) Tj
+0 -14 Td
+(fairness and simplicity. The exact scheme in use is indicated on the pool website.) Tj
+0 -14 Td
+(Key parameters:) Tj
+0 -14 Td
+( Minimum payout: defined in ANTR on the pool website.) Tj
+0 -14 Td
+( Required confirmations: blocks must reach a certain number of confirmations before) Tj
+0 -14 Td
+(rewards are considered final.) Tj
+0 -14 Td
+( Payout frequency: payouts are executed periodically in automatic batches.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(IT  3. Schema di payout) Tj
+0 -14 Td
+(La pool utilizza uno schema di distribuzione delle reward standard \(ad esempio PPLNS o) Tj
+0 -14 Td
+(simile\) pensato per bilanciare equità e semplicità. Lo schema effettivamente in uso è) Tj
+0 -14 Td
+(indicato sul sito della pool.) Tj
+0 -14 Td
+(Parametri chiave:) Tj
+0 -14 Td
+( Payout minimo: definito in ANTR sul sito della pool.) Tj
+0 -14 Td
+( Conferme richieste: i blocchi devono raggiungere un certo numero di conferme prima che) Tj
+0 -14 Td
+(le reward siano considerate definitive.) Tj
+0 -14 Td
+( Frequenza pagamenti: i pagamenti vengono eseguiti periodicamente in batch automatici.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(EN  4. Fees) Tj
+0 -14 Td
+(The official pool applies a development fee of about 1% on block rewards. This fee:) Tj
+0 -14 Td
+( helps cover server, maintenance and security costs;) Tj
+0 -14 Td
+( may contribute to the AntartideCoin project treasury.) Tj
+0 -14 Td
+(No hidden fees should be applied. Any change in fees will be communicated on the pool) Tj
+0 -14 Td
+(website.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(IT  4. Fee) Tj
+0 -14 Td
+(La pool ufficiale applica una development fee di circa l1% sulle reward di blocco. Tale) Tj
+0 -14 Td
+(fee:) Tj
+0 -14 Td
+( contribuisce a coprire i costi di server, manutenzione e sicurezza;) Tj
+0 -14 Td
+( può contribuire alla tesoreria del progetto AntartideCoin.) Tj
+0 -14 Td
+(Non sono previste fee nascoste. Ogni modifica alle fee sarà comunicata sul sito della) Tj
+0 -14 Td
+(pool.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(EN  5. Behaviour rules) Tj
+0 -14 Td
+(To protect the network and the pool, the following behaviours are prohibited:) Tj
+0 -14 Td
+( attacks \(DDoS, flood, exploits\);) Tj
+0 -14 Td
+( manipulating shares or sending fake hashrate;) Tj
+0 -14 Td
+( using stolen or compromised credentials;) Tj
+0 -14 Td
+( any activity that aims to damage the pool, the network or other miners.) Tj
+0 -14 Td
+(The pool operator may temporarily or permanently block IPs and/or addresses that violate) Tj
+0 -14 Td
+(these rules.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(IT  5. Regole di comportamento) Tj
+0 -14 Td
+(Per tutelare la rete e la pool, sono vietati:) Tj
+0 -14 Td
+( attacchi \(DDoS, flood, exploit\);) Tj
+0 -14 Td
+( manipolazione delle share o invio di hashrate falso;) Tj
+0 -14 Td
+( utilizzo di credenziali rubate o compromesse;) Tj
+0 -14 Td
+( qualsiasi attività che miri a danneggiare la pool, la rete o altri miner.) Tj
+0 -14 Td
+(Loperatore della pool può bloccare temporaneamente o definitivamente IP e/o indirizzi che) Tj
+0 -14 Td
+(violino tali regole.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(EN  6. Transparency and statistics) Tj
+0 -14 Td
+(The pool provides public statistics on:) Tj
+0 -14 Td
+( hashrate,) Tj
+0 -14 Td
+( blocks found,) Tj
+0 -14 Td
+( rewards and payouts,) Tj
+0 -14 Td
+( connected workers.) Tj
+0 -14 Td
+(For verification of blocks and total supply, the official explorer at) Tj
+0 -14 Td
+(explorer.antartidecoin.org should be used.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(IT  6. Trasparenza e statistiche) Tj
+0 -14 Td
+(La pool mette a disposizione statistiche pubbliche su:) Tj
+0 -14 Td
+( hashrate,) Tj
+0 -14 Td
+( blocchi trovati,) Tj
+0 -14 Td
+( reward e payout,) Tj
+0 -14 Td
+( worker connessi.) Tj
+0 -14 Td
+(Per la verifica dei blocchi e della supply totale si utilizza lexplorer ufficiale su) Tj
+0 -14 Td
+(explorer.antartidecoin.org.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(EN  7. Disclaimer) Tj
+0 -14 Td
+(Mining ANTR through the official pool is done at your own risk. The operator cannot) Tj
+0 -14 Td
+(guarantee constant uptime, absence of bugs or profitability.) Tj
+0 -14 Td
+(This document does not constitute investment, legal or tax advice.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(IT  7. Disclaimer) Tj
+0 -14 Td
+(Il mining di ANTR tramite la pool ufficiale avviene a proprio rischio. Loperatore non può) Tj
+0 -14 Td
+(garantire uptime costante, assenza di bug o redditività.) Tj
+0 -14 Td
+(Questo documento non costituisce consulenza di investimento, legale o fiscale.) Tj
+0 -14 Td
+() Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000247 00000 n 
+0000006691 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+6761
+%%EOF

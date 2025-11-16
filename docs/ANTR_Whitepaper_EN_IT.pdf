@@ -1,0 +1,281 @@
+%PDF-1.4
+%âãÏÓ
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 8283 >>
+stream
+BT
+/F1 12 Tf
+72 800 Td
+(AntartideCoin \(ANTR\)  Whitepaper / Whitepaper) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(Version 1.0  Draft / Bozza) Tj
+0 -14 Td
+(Last update / Ultimo aggiornamento: November 2025) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(EN  1. Abstract) Tj
+0 -14 Td
+(AntartideCoin \(ticker: ANTR\) is a Scrypt-based, mineable cryptocurrency designed to power) Tj
+0 -14 Td
+(the broader Antartide ecosystem, including an online marketplace \(AntartideShop.com\),) Tj
+0 -14 Td
+(digital services and future games.) Tj
+0 -14 Td
+(The project aims to combine open and fair mining, a transparent and predictable emission) Tj
+0 -14 Td
+(schedule, and a long-term strategy more similar to infrastructure projects \(like the) Tj
+0 -14 Td
+(philosophy behind Bitcoin\) than to short-lived pump tokens driven only by hype.) Tj
+0 -14 Td
+(There is no ICO, no public pre-sale and no automatic promise of profit.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(IT  1. Abstract) Tj
+0 -14 Td
+(AntartideCoin \(ticker: ANTR\) è una criptovaluta minabile basata su Scrypt, progettata per) Tj
+0 -14 Td
+(alimentare lecosistema Antartide, che comprende un marketplace online) Tj
+0 -14 Td
+(\(AntartideShop.com\), servizi digitali e futuri giochi.) Tj
+0 -14 Td
+(Il progetto punta a combinare mining aperto ed equo, una curva di emissione trasparente e) Tj
+0 -14 Td
+(prevedibile e una strategia di lungo periodo più vicina ai progetti infrastrutturali \(come) Tj
+0 -14 Td
+(la filosofia di Bitcoin\) che ai token speculativi di breve durata basati solo sullhype.) Tj
+0 -14 Td
+(Non è prevista alcuna ICO, nessuna prevendita pubblica e non vi è alcuna promessa) Tj
+0 -14 Td
+(automatica di profitto.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(EN  2. Vision & Use Cases) Tj
+0 -14 Td
+(AntartideCoin aims to become a digital currency for the Antartide ecosystem and, in the) Tj
+0 -14 Td
+(future, for selected external partners. Main intended uses:) Tj
+0 -14 Td
+( Medium of exchange on AntartideShop.com for goods and services.) Tj
+0 -14 Td
+( Reward system for games, mini-apps and community initiatives.) Tj
+0 -14 Td
+( Possible payment method in other Antartide projects \(services, platforms, tools\).) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(IT  2. Vision & Use Cases) Tj
+0 -14 Td
+(Lobiettivo di AntartideCoin è diventare una moneta digitale per lecosistema Antartide e,) Tj
+0 -14 Td
+(in futuro, per partner esterni selezionati. Principali utilizzi previsti:) Tj
+0 -14 Td
+( Mezzo di scambio su AntartideShop.com per beni e servizi.) Tj
+0 -14 Td
+( Sistema di ricompensa per giochi, mini app e iniziative della community.) Tj
+0 -14 Td
+( Possibile metodo di pagamento in altri progetti Antartide \(servizi, piattaforme,) Tj
+0 -14 Td
+(strumenti\).) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(EN  3. Technical overview \(high level\)) Tj
+0 -14 Td
+( Algorithm: Scrypt, Proof-of-Work.) Tj
+0 -14 Td
+( Target maximum supply: approximately 36.5 billion ANTR over the long term.) Tj
+0 -14 Td
+( Premine / creator allocation: 1,500,000,000 ANTR created at launch and assigned to) Tj
+0 -14 Td
+(creator-controlled wallets for development, infrastructure and project treasury.) Tj
+0 -14 Td
+( Block rewards decrease over time to limit long-term inflation.) Tj
+0 -14 Td
+( A planned hard fork on supply/rewards is foreseen when specific supply milestones are) Tj
+0 -14 Td
+(reached \(for example around 1 billion ANTR\), in order to further slow emission.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(IT  3. Panoramica tecnica \(alto livello\)) Tj
+0 -14 Td
+( Algoritmo: Scrypt, Proof-of-Work.) Tj
+0 -14 Td
+( Supply massima target: circa 36,5 miliardi di ANTR nel lungo periodo.) Tj
+0 -14 Td
+( Premine / dotazione del creatore: 1.500.000.000 ANTR creati allavvio e assegnati a) Tj
+0 -14 Td
+(wallet controllati dal creatore per sviluppo, infrastruttura e tesoreria del progetto.) Tj
+0 -14 Td
+( Le reward per blocco diminuiscono nel tempo per limitare linflazione nel lungo periodo.) Tj
+0 -14 Td
+( È previsto un hard fork programmato sulla supply/reward al raggiungimento di determinate) Tj
+0 -14 Td
+(soglie di supply \(ad esempio intorno a 1 miliardo di ANTR\), per rallentare ulteriormente) Tj
+0 -14 Td
+(lemissione.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(EN  4. Mining, pool and explorer) Tj
+0 -14 Td
+(Mining is open to anyone with compatible hardware \(GPU / ASIC\) and correct configuration.) Tj
+0 -14 Td
+(An official mining pool is available at pool.antartidecoin.org, with an indicative dev fee) Tj
+0 -14 Td
+(of about 1% to help cover infrastructure costs.) Tj
+0 -14 Td
+(An official explorer is available at explorer.antartidecoin.org to verify blocks,) Tj
+0 -14 Td
+(transactions and supply in a transparent way.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(IT  4. Mining, pool ed explorer) Tj
+0 -14 Td
+(Il mining è aperto a chiunque disponga di hardware compatibile \(GPU / ASIC\) e di una) Tj
+0 -14 Td
+(configurazione corretta.) Tj
+0 -14 Td
+(Una pool di mining ufficiale è disponibile su pool.antartidecoin.org, con una dev fee) Tj
+0 -14 Td
+(indicativa di circa l1% per contribuire a coprire i costi di infrastruttura.) Tj
+0 -14 Td
+(Un explorer ufficiale è disponibile su explorer.antartidecoin.org per verificare blocchi,) Tj
+0 -14 Td
+(transazioni e supply in modo trasparente.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(EN  5. Governance & transparency) Tj
+0 -14 Td
+(The project is currently led by its creator, an Italian developer who for now prefers to) Tj
+0 -14 Td
+(remain anonymous. The focus is on the solidity of the code, infrastructure and) Tj
+0 -14 Td
+(documentation, not on personal branding.) Tj
+0 -14 Td
+(Key transparency commitments:) Tj
+0 -14 Td
+( Publish emission and supply rules.) Tj
+0 -14 Td
+( Publish pool rules.) Tj
+0 -14 Td
+( Publish periodic rewards & supply reports.) Tj
+0 -14 Td
+( Announce future hard forks and protocol changes with adequate notice.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(IT  5. Governance & trasparenza) Tj
+0 -14 Td
+(Il progetto è attualmente guidato dal suo creatore, uno sviluppatore italiano che per ora) Tj
+0 -14 Td
+(preferisce restare anonimo. Il focus è sulla solidità del codice, dellinfrastruttura e) Tj
+0 -14 Td
+(della documentazione, non sul personal brand.) Tj
+0 -14 Td
+(Impegni chiave di trasparenza:) Tj
+0 -14 Td
+( Pubblicare le regole di emissione e di supply.) Tj
+0 -14 Td
+( Pubblicare il regolamento della pool.) Tj
+0 -14 Td
+( Pubblicare report periodici su reward e supply.) Tj
+0 -14 Td
+( Annunciare con adeguato preavviso eventuali hard fork e modifiche al protocollo.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(EN  6. Roadmap \(from 2026 onwards\)) Tj
+0 -14 Td
+(2026  Network & infrastructure setup.) Tj
+0 -14 Td
+(2027  Wallet improvements and first integrations with Antartide services.) Tj
+0 -14 Td
+(2028  Ecosystem expansion, games and tools for merchants.) Tj
+0 -14 Td
+(Future  Planned hard fork on supply/rewards and deeper integration with) Tj
+0 -14 Td
+(AntartideShop.com.) Tj
+0 -14 Td
+(Dates are indicative and may change depending on technical results and community growth.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(IT  6. Roadmap \(dal 2026 in poi\)) Tj
+0 -14 Td
+(2026  Setup rete e infrastruttura.) Tj
+0 -14 Td
+(2027  Miglioramenti al wallet e prime integrazioni con i servizi Antartide.) Tj
+0 -14 Td
+(2028  Espansione dellecosistema, giochi e strumenti per merchant.) Tj
+0 -14 Td
+(Futuro  Hard fork pianificato su supply/reward e integrazione più profonda con) Tj
+0 -14 Td
+(AntartideShop.com.) Tj
+0 -14 Td
+(Le date sono indicative e possono variare in base ai risultati tecnici e alla crescita) Tj
+0 -14 Td
+(della community.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(EN  7. Risks & disclaimer) Tj
+0 -14 Td
+(AntartideCoin is an experimental project. Holding, mining or using ANTR involves risk) Tj
+0 -14 Td
+(\(high volatility, technical risks, regulatory uncertainty\). Nothing in this whitepaper is) Tj
+0 -14 Td
+(an investment, legal or tax recommendation.) Tj
+0 -14 Td
+(Always do your own research and never risk more than you can afford to lose.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(IT  7. Rischi & disclaimer) Tj
+0 -14 Td
+(AntartideCoin è un progetto sperimentale. Detenere, minare o utilizzare ANTR comporta) Tj
+0 -14 Td
+(rischi \(forte volatilità, rischi tecnici, incertezza normativa\). Nulla in questo) Tj
+0 -14 Td
+(whitepaper costituisce una raccomandazione di investimento, legale o fiscale.) Tj
+0 -14 Td
+(Informati sempre in modo autonomo e non rischiare mai più di quanto puoi permetterti di) Tj
+0 -14 Td
+(perdere.) Tj
+0 -14 Td
+() Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000247 00000 n 
+0000008582 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+8652
+%%EOF

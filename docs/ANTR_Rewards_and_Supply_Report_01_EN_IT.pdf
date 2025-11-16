@@ -1,0 +1,243 @@
+%PDF-1.4
+%âãÏÓ
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 6550 >>
+stream
+BT
+/F1 12 Tf
+72 800 Td
+(AntartideCoin  Rewards & Supply Report n.1 / Report Ricompense & Supply n.1) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(Version 1.0) Tj
+0 -14 Td
+(Period covered / Periodo coperto: Initial phase  baseline report) Tj
+0 -14 Td
+(Last update / Ultimo aggiornamento: November 2025) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(EN  1. Purpose of this report) Tj
+0 -14 Td
+(This first Rewards & Supply Report is a baseline transparency document. It explains the) Tj
+0 -14 Td
+(structure of future reports and summarises the main transparency commitments of the) Tj
+0 -14 Td
+(AntartideCoin project regarding supply, rewards and premine monitoring.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(IT  1. Scopo di questo report) Tj
+0 -14 Td
+(Questo primo Rewards & Supply Report è un documento di trasparenza di base. Spiega la) Tj
+0 -14 Td
+(struttura dei futuri report e riassume i principali impegni di trasparenza del progetto) Tj
+0 -14 Td
+(AntartideCoin in merito a supply, reward e monitoraggio del premine.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(EN  2. Structure of periodic reports) Tj
+0 -14 Td
+(Future reports \(for example monthly or quarterly\) will generally include:) Tj
+0 -14 Td
+( A supply snapshot \(total supply, circulating supply, premine balances\).) Tj
+0 -14 Td
+( A summary of block rewards generated in the period.) Tj
+0 -14 Td
+( An overview of pool activity and dev fee collected.) Tj
+0 -14 Td
+( A section dedicated to premine wallets activity.) Tj
+0 -14 Td
+( Notes on technical or economic events that may affect the network.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(IT  2. Struttura dei report periodici) Tj
+0 -14 Td
+(I futuri report \(ad esempio mensili o trimestrali\) includeranno in generale:) Tj
+0 -14 Td
+( Una fotografia della supply \(supply totale, supply circolante, saldi del premine\).) Tj
+0 -14 Td
+( Un riepilogo delle reward per blocco generate nel periodo.) Tj
+0 -14 Td
+( Una panoramica dellattività della pool e delle dev fee raccolte.) Tj
+0 -14 Td
+( Una sezione dedicata allattività dei wallet di premine.) Tj
+0 -14 Td
+( Note su eventi tecnici o economici che possano incidere sulla rete.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(EN  3. Supply overview \(conceptual\)) Tj
+0 -14 Td
+(The AntartideCoin supply is composed of:) Tj
+0 -14 Td
+( Coins mined by the network over time.) Tj
+0 -14 Td
+( The initial premine of 1,500,000,000 ANTR assigned to creator-controlled wallets.) Tj
+0 -14 Td
+(In future versions of this report, a table will show the main premine addresses, their) Tj
+0 -14 Td
+(balances and any relevant movement with a clear explanation.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(IT  3. Panoramica supply \(concettuale\)) Tj
+0 -14 Td
+(La supply di AntartideCoin è composta da:) Tj
+0 -14 Td
+( Monete minate dalla rete nel tempo.) Tj
+0 -14 Td
+( Il premine iniziale di 1.500.000.000 ANTR assegnato a wallet controllati dal creatore.) Tj
+0 -14 Td
+(Nelle future versioni di questo report sarà presente una tabella con i principali) Tj
+0 -14 Td
+(indirizzi del premine, i relativi saldi e gli eventuali movimenti rilevanti, accompagnati) Tj
+0 -14 Td
+(da una spiegazione chiara.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(EN  4. Rewards and mining activity \(conceptual\)) Tj
+0 -14 Td
+(For each period, the report will summarise:) Tj
+0 -14 Td
+( Number of blocks found and total ANTR created as block rewards.) Tj
+0 -14 Td
+( Share of rewards distributed to miners.) Tj
+0 -14 Td
+( Share of rewards collected as dev fee by the official pool \(if applicable\).) Tj
+0 -14 Td
+( Any significant changes in hashrate or mining distribution.) Tj
+0 -14 Td
+(At this stage, this report does not yet include detailed numerical data and serves only as) Tj
+0 -14 Td
+(a framework.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(IT  4. Reward e attività di mining \(concettuale\)) Tj
+0 -14 Td
+(Per ciascun periodo, il report riepilogherà:) Tj
+0 -14 Td
+( Numero di blocchi trovati e totale di ANTR creati come reward per blocco.) Tj
+0 -14 Td
+( Quota di reward distribuita ai miner.) Tj
+0 -14 Td
+( Quota di reward raccolta come dev fee dalla pool ufficiale \(se applicabile\).) Tj
+0 -14 Td
+( Eventuali variazioni significative di hashrate o distribuzione del mining.) Tj
+0 -14 Td
+(In questa fase il report non contiene ancora dati numerici di dettaglio e funge solo da) Tj
+0 -14 Td
+(struttura di riferimento.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(EN  5. Premine wallets monitoring) Tj
+0 -14 Td
+(One of the key transparency commitments of the project is to monitor premine wallets) Tj
+0 -14 Td
+(publicly.) Tj
+0 -14 Td
+(Each report will indicate:) Tj
+0 -14 Td
+( Main premine wallet addresses.) Tj
+0 -14 Td
+( Starting and ending balance in the period.) Tj
+0 -14 Td
+( Relevant transfers with a short explanation \(for example, infrastructure costs,) Tj
+0 -14 Td
+(development, marketing or treasury operations\).) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(IT  5. Monitoraggio dei wallet di premine) Tj
+0 -14 Td
+(Uno degli impegni centrali di trasparenza del progetto è il monitoraggio pubblico dei) Tj
+0 -14 Td
+(wallet di premine.) Tj
+0 -14 Td
+(Ogni report indicherà:) Tj
+0 -14 Td
+( I principali indirizzi di wallet di premine.) Tj
+0 -14 Td
+( Il saldo iniziale e finale nel periodo.) Tj
+0 -14 Td
+( I trasferimenti rilevanti con una breve spiegazione \(ad esempio costi di infrastruttura,) Tj
+0 -14 Td
+(sviluppo, marketing o operazioni di tesoreria\).) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(EN  6. Outlook and next steps) Tj
+0 -14 Td
+(As the network evolves, the goal is to publish increasingly detailed and data-driven) Tj
+0 -14 Td
+(reports, including charts and tables derived from the official explorer.) Tj
+0 -14 Td
+(For now, this baseline document defines the reporting approach and confirms the commitment) Tj
+0 -14 Td
+(to regular transparency.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(IT  6. Prospettive e passi successivi) Tj
+0 -14 Td
+(Con levoluzione della rete, lobiettivo è pubblicare report sempre più dettagliati e) Tj
+0 -14 Td
+(basati sui dati, con grafici e tabelle derivati dallexplorer ufficiale.) Tj
+0 -14 Td
+(Per il momento, questo documento definisce limpostazione dei report e conferma limpegno) Tj
+0 -14 Td
+(verso una trasparenza regolare.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(EN  7. Disclaimer) Tj
+0 -14 Td
+(This report is for information and transparency only. It does not contain or imply any) Tj
+0 -14 Td
+(guarantee of profit and does not constitute investment, legal or tax advice.) Tj
+0 -14 Td
+() Tj
+0 -14 Td
+(IT  7. Disclaimer) Tj
+0 -14 Td
+(Questo report ha esclusivamente finalità informative e di trasparenza. Non contiene né) Tj
+0 -14 Td
+(implica alcuna garanzia di profitto e non costituisce consulenza di investimento, legale o) Tj
+0 -14 Td
+(fiscale.) Tj
+0 -14 Td
+() Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000247 00000 n 
+0000006849 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+6919
+%%EOF
