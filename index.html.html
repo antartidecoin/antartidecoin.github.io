@@ -1,0 +1,1568 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AntartideCoin (ANTR) – The ice coin</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="AntartideCoin (ANTR) is a Scrypt-based cryptocurrency designed for a real ecosystem: mining, payments and future integration with the global marketplace AntartideShop.com.">
+  <link rel="icon" href="favicoin.ico" sizes="any">
+  <style>
+    :root {
+      --bg-dark: #040b12;
+      --bg-section: #061521;
+      --accent: #28d8ff;
+      --accent-soft: #4cf1d3;
+      --text-main: #f7fbff;
+      --text-muted: #a9b7c6;
+      --border-soft: rgba(255,255,255,0.06);
+      --radius-xl: 24px;
+      --radius-lg: 18px;
+      --shadow-soft: 0 18px 45px rgba(0,0,0,0.55);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #06223a 0, #03060b 45%, #010307 100%);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    .wrapper {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 20px 18px 60px;
+    }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(16px);
+      background: linear-gradient(to bottom, rgba(3,7,16,0.95), rgba(3,7,16,0.75));
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+    .nav {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 10px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo-img {
+      width: 38px;
+      height: 38px;
+      border-radius: 999px;
+      box-shadow: 0 0 18px rgba(76,241,211,0.65);
+    }
+    .brand-text-main {
+      font-weight: 700;
+      font-size: 18px;
+    }
+    .brand-text-sub {
+      font-size: 11px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+    }
+    .nav-center {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .nav-links {
+      display: flex;
+      gap: 14px;
+    }
+    .nav-links a {
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+    }
+    .nav-links a:hover {
+      color: var(--text-main);
+      border-color: rgba(255,255,255,0.09);
+      background: radial-gradient(circle at top, rgba(40,216,255,0.12), transparent 60%);
+    }
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .nav-cta {
+      display: none;
+    }
+
+    .lang-switch {
+      display: inline-flex;
+      gap: 4px;
+      padding: 2px;
+      border-radius: 999px;
+      background: rgba(4,13,22,0.9);
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+    .lang-btn {
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      font-size: 11px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      cursor: pointer;
+    }
+    .lang-btn.active {
+      background: linear-gradient(135deg, #28d8ff, #4cf1d3);
+      color: #021018;
+      font-weight: 600;
+    }
+
+    /* Language helper */
+    .lang-en,
+    .lang-it {
+      display: none;
+    }
+    body[data-lang="en"] .lang-en {
+      display: inline;
+    }
+    body[data-lang="it"] .lang-it {
+      display: inline;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 11px 20px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 600;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+      white-space: nowrap;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #28d8ff, #4cf1d3);
+      color: #021018;
+      box-shadow: 0 10px 25px rgba(40,216,255,0.32);
+    }
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 16px 40px rgba(40,216,255,0.45);
+    }
+    .btn-ghost {
+      background: rgba(8,27,43,0.8);
+      border-color: rgba(255,255,255,0.14);
+      color: var(--text-main);
+    }
+    .btn-ghost:hover {
+      border-color: var(--accent);
+      background: radial-gradient(circle at top, rgba(40,216,255,0.16), rgba(8,27,43,0.9));
+      transform: translateY(-1px);
+    }
+
+    /* Hero */
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+      gap: 26px;
+      padding-top: 32px;
+      padding-bottom: 30px;
+      align-items: center;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(40,216,255,0.45);
+      background: radial-gradient(circle at left, rgba(40,216,255,0.2), rgba(3,10,19,0.95));
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+    .badge span {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--accent-soft);
+    }
+    .hero-title {
+      font-size: clamp(30px, 4vw, 38px);
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      margin-bottom: 12px;
+    }
+    .hero-title span.gradient {
+      background: linear-gradient(135deg, #28d8ff, #4cf1d3);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .hero-sub {
+      font-size: 14px;
+      color: var(--text-muted);
+      max-width: 520px;
+      margin-bottom: 18px;
+    }
+    .hero-sub small {
+      display: block;
+      font-size: 11px;
+      margin-top: 6px;
+      color: #7f8da0;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+    .hero-meta strong {
+      color: var(--accent-soft);
+      font-weight: 600;
+    }
+
+    .lang-notice {
+      margin-top: 8px;
+      font-size: 11px;
+      color: var(--text-muted);
+      border-radius: 999px;
+      border: 1px dashed rgba(255,255,255,0.18);
+      padding: 6px 10px;
+      display: none;
+    }
+
+    .hero-card {
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--border-soft);
+      background: radial-gradient(circle at top left, rgba(40,216,255,0.16), rgba(0,0,0,0.9));
+      padding: 18px 16px 16px;
+      box-shadow: var(--shadow-soft);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      inset: -30%;
+      background:
+        radial-gradient(circle at top right, rgba(40,216,255,0.25), transparent 60%),
+        radial-gradient(circle at bottom left, rgba(76,241,211,0.18), transparent 55%);
+      opacity: 0.9;
+      pointer-events: none;
+    }
+    .hero-card-inner {
+      position: relative;
+      z-index: 1;
+    }
+    .hc-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .hc-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+    }
+    .hc-value {
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .hc-chip {
+      font-size: 11px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      background: rgba(3,12,19,0.8);
+      border: 1px solid rgba(255,255,255,0.14);
+    }
+    .hc-main {
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px dashed rgba(255,255,255,0.14);
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.5fr);
+      gap: 12px;
+      align-items: center;
+    }
+    .hc-logo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 0, #ffffff, #28d8ff 50%, #06121d 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 36px rgba(40,216,255,0.8);
+      overflow: hidden;
+    }
+    .hc-logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .hc-details {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+    .hc-grid {
+      margin-top: 12px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+      font-size: 11px;
+    }
+    .hc-pill {
+      padding: 7px 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(6,21,33,0.9);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+    }
+    .hc-pill span {
+      color: var(--text-muted);
+    }
+    .hc-pill strong {
+      color: #e9f4ff;
+      font-weight: 600;
+    }
+
+    /* Sections */
+    section {
+      margin-top: 26px;
+      padding: 20px 18px;
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--border-soft);
+      background: linear-gradient(145deg, rgba(4,15,25,0.96), rgba(2,9,16,0.98));
+      box-shadow: 0 18px 40px rgba(0,0,0,0.55);
+    }
+    section + section {
+      margin-top: 18px;
+    }
+    .section-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .section-sub {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+
+    .cols-2 {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+      gap: 18px;
+      align-items: flex-start;
+    }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    .pill {
+      font-size: 11px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(4,16,26,0.96);
+      color: var(--text-muted);
+    }
+
+    .card-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .card {
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(255,255,255,0.10);
+      background: radial-gradient(circle at top, rgba(40,216,255,0.10), rgba(2,10,18,0.96));
+      padding: 10px 11px;
+      font-size: 12px;
+    }
+    .card h4 {
+      font-size: 13px;
+      margin-bottom: 4px;
+    }
+    .card p {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    .token-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+      margin-top: 10px;
+    }
+    .token-table th,
+    .token-table td {
+      padding: 6px 6px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .token-table th {
+      text-align: left;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+    }
+    .token-table td:nth-child(1) {
+      color: var(--text-muted);
+      width: 55%;
+    }
+    .token-table td:nth-child(2) {
+      color: #e9f4ff;
+      text-align: right;
+    }
+
+    .timeline {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 9px;
+      margin-top: 12px;
+      font-size: 11px;
+    }
+    .timeline-item {
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(255,255,255,0.09);
+      padding: 8px 9px;
+      background: rgba(5,16,26,0.97);
+    }
+    .timeline-item h4 {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--accent-soft);
+      margin-bottom: 4px;
+    }
+    .timeline-item strong {
+      display: block;
+      font-size: 12px;
+      margin-bottom: 3px;
+    }
+
+    .link-list {
+      list-style: none;
+      font-size: 12px;
+      margin-top: 8px;
+    }
+    .link-list li + li {
+      margin-top: 4px;
+    }
+    .link-list a {
+      color: var(--accent-soft);
+    }
+    .link-list small {
+      color: var(--text-muted);
+      margin-left: 4px;
+      font-size: 11px;
+    }
+
+    .code-block {
+      margin-top: 8px;
+      padding: 8px 10px;
+      border-radius: 10px;
+      background: rgba(3,10,18,0.95);
+      border: 1px solid rgba(255,255,255,0.16);
+      font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 12px;
+      overflow-x: auto;
+    }
+    .steps-list {
+      margin-top: 6px;
+      padding-left: 18px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .steps-list li + li {
+      margin-top: 4px;
+    }
+
+    footer {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 16px;
+      text-align: center;
+    }
+    footer .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 6px;
+    }
+    footer a {
+      color: var(--accent-soft);
+    }
+    footer small {
+      display: block;
+      opacity: 0.85;
+    }
+
+    @media (max-width: 900px) {
+      .nav-center {
+        display: none;
+      }
+      .nav-cta {
+        display: inline-flex;
+      }
+    }
+
+    @media (max-width: 800px) {
+      .hero {
+        grid-template-columns: minmax(0,1fr);
+      }
+      .hero-card {
+        order: -1;
+      }
+      .cols-2 {
+        grid-template-columns: minmax(0,1fr);
+      }
+      .card-grid-3 {
+        grid-template-columns: repeat(2, minmax(0,1fr));
+      }
+      .timeline {
+        grid-template-columns: repeat(2, minmax(0,1fr));
+      }
+    }
+
+    @media (max-width: 520px) {
+      .card-grid-3,
+      .timeline {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      section {
+        padding: 16px 14px;
+      }
+      .wrapper {
+        padding-inline: 14px;
+      }
+    }
+  </style>
+</head>
+<body data-lang="en">
+  <header>
+    <div class="nav">
+      <div class="nav-left">
+        <img src="logo.png" alt="AntartideCoin logo" class="logo-img">
+        <div>
+          <div class="brand-text-main">AntartideCoin</div>
+          <div class="brand-text-sub">
+            <span class="lang-en">The ice coin – ANTR</span>
+            <span class="lang-it">La moneta ghiaccio – ANTR</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-center">
+        <nav class="nav-links">
+          <a href="#about">
+            <span class="lang-en">What is</span>
+            <span class="lang-it">Cos’è</span>
+          </a>
+          <a href="#economics">
+            <span class="lang-en">Economics</span>
+            <span class="lang-it">Economia</span>
+          </a>
+          <a href="#mining">
+            <span class="lang-en">Mining</span>
+            <span class="lang-it">Mining</span>
+          </a>
+          <a href="#wallet">
+            <span class="lang-en">Wallet</span>
+            <span class="lang-it">Wallet</span>
+          </a>
+          <a href="#roadmap">
+            <span class="lang-en">Roadmap</span>
+            <span class="lang-it">Roadmap</span>
+          </a>
+        </nav>
+      </div>
+
+      <div class="nav-right">
+        <div class="lang-switch">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="it">IT</button>
+        </div>
+        <a href="#wallet" class="btn btn-primary nav-cta">
+          <span class="lang-en">Download wallet</span>
+          <span class="lang-it">Scarica il wallet</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrapper">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div>
+        <div class="badge">
+          <span>Official</span>
+          <span class="lang-en">Official website of AntartideCoin (ANTR)</span>
+          <span class="lang-it">Sito ufficiale di AntartideCoin (ANTR)</span>
+        </div>
+        <h1 class="hero-title">
+          AntartideCoin <span class="gradient">(ANTR)</span><br>
+          <span class="lang-en">The ice coin.</span>
+          <span class="lang-it">La moneta ghiaccio.</span>
+        </h1>
+        <p class="hero-sub">
+          <span class="lang-en">
+            AntartideCoin is a Scrypt-based cryptocurrency designed to be minable, transparent
+            and connected to a real ecosystem: online shop, services and games.
+          </span>
+          <span class="lang-it">
+            AntartideCoin è una criptovaluta basata su algoritmo Scrypt, pensata per essere
+            minabile, trasparente e collegata a un ecosistema reale: shop online, servizi e giochi.
+          </span>
+          <small>
+            <span class="lang-en">
+              Independent project with a long–term vision. Nothing on this website is
+              financial advice or a guarantee of profit.
+            </span>
+            <span class="lang-it">
+              Progetto indipendente con una visione di lungo periodo. Nulla su questo sito
+              costituisce consulenza finanziaria o garanzia di profitto.
+            </span>
+          </small>
+        </p>
+        <div class="hero-actions">
+          <a href="#wallet" class="btn btn-primary">
+            <span class="lang-en">Download desktop wallet</span>
+            <span class="lang-it">Scarica il wallet desktop</span>
+          </a>
+          <a href="#mining" class="btn btn-ghost">
+            <span class="lang-en">How to mine ANTR</span>
+            <span class="lang-it">Come minare ANTR</span>
+          </a>
+          <a href="#docs" class="btn btn-ghost">
+            <span class="lang-en">Documentation</span>
+            <span class="lang-it">Documentazione</span>
+          </a>
+        </div>
+        <div class="hero-meta">
+          <div><strong>Algorithm:</strong> Scrypt</div>
+          <div><strong>Ticker:</strong> ANTR</div>
+          <div><strong>Supply target:</strong> ~36.5 billion ANTR</div>
+        </div>
+        <div id="lang-notice" class="lang-notice">
+          <span class="lang-en">Italian version is being completed. Some sections may still appear in English.</span>
+          <span class="lang-it">Versione italiana in completamento. Alcune sezioni potrebbero essere ancora in inglese.</span>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-card-inner">
+          <div class="hc-row">
+            <div>
+              <div class="hc-label">
+                <span class="lang-en">Network status</span>
+                <span class="lang-it">Stato rete</span>
+              </div>
+              <div class="hc-value">
+                <span class="lang-en">Mainnet (experimental)</span>
+                <span class="lang-it">Mainnet (sperimentale)</span>
+              </div>
+            </div>
+            <div class="hc-chip">
+              <span class="lang-en">No pre-sale, no ICO</span>
+              <span class="lang-it">Nessuna pre-sale, nessuna ICO</span>
+            </div>
+          </div>
+
+          <div class="hc-main">
+            <div class="hc-logo">
+              <img src="logo.png" alt="AntartideCoin logo">
+            </div>
+            <div class="hc-details">
+              <strong>
+                <span class="lang-en">AntartideCoin – The ice coin</span>
+                <span class="lang-it">AntartideCoin – La moneta ghiaccio</span>
+              </strong>
+              <p>
+                <span class="lang-en">
+                  Scrypt mining, controlled supply and an emission schedule designed
+                  to last for decades. Focus on real usage and transparency, not just speculation.
+                </span>
+                <span class="lang-it">
+                  Mining Scrypt, supply controllata e una curva di emissione pensata
+                  per durare decenni. Focus sull’utilizzo reale e sulla trasparenza,
+                  non solo sulla speculazione.
+                </span>
+              </p>
+            </div>
+          </div>
+
+          <div class="hc-grid">
+            <div class="hc-pill">
+              <span>Emission</span>
+              <strong>
+                <span class="lang-en">step–down over time</span>
+                <span class="lang-it">riduzione graduale nel tempo</span>
+              </strong>
+            </div>
+            <div class="hc-pill">
+              <span>Creator</span>
+              <strong>
+                <span class="lang-en">Italian, anonymous (for now)</span>
+                <span class="lang-it">Italiano, anonimo (per ora)</span>
+              </strong>
+            </div>
+            <div class="hc-pill">
+              <span>Reward</span>
+              <strong>reduction ~6y*</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="section-title">
+        <span class="lang-en">What is AntartideCoin?</span>
+        <span class="lang-it">Cos’è AntartideCoin?</span>
+      </div>
+      <div class="section-sub">
+        <span class="lang-en">
+          AntartideCoin (ANTR) is a Scrypt-based cryptocurrency designed to:
+        </span>
+        <span class="lang-it">
+          AntartideCoin (ANTR) è una criptovaluta Scrypt progettata per:
+        </span>
+        <ul style="margin-top:6px; padding-left:18px;">
+          <li>
+            <span class="lang-en">be mined by anyone with compatible hardware (ASIC/GPU);</span>
+            <span class="lang-it">essere minata da chiunque disponga di hardware compatibile (ASIC/GPU);</span>
+          </li>
+          <li>
+            <span class="lang-en">power a real ecosystem (AntartideShop.com, services, games, custom wallet);</span>
+            <span class="lang-it">alimentare un ecosistema reale (AntartideShop.com, servizi, giochi, wallet dedicato);</span>
+          </li>
+          <li>
+            <span class="lang-en">keep emission rules transparent and public.</span>
+            <span class="lang-it">mantenere regole di emissione trasparenti e pubbliche.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="cols-2">
+        <div>
+          <h3 style="font-size:14px; margin-bottom:6px;">
+            <span class="lang-en">Project goals</span>
+            <span class="lang-it">Obiettivi del progetto</span>
+          </h3>
+          <p style="font-size:13px; color:var(--text-muted);">
+            <span class="lang-en">
+              AntartideCoin is not designed as a short-term speculative “pump” token whose price
+              depends only on hype. The aim is to build a solid, long-term currency that can serve
+              as a medium of exchange in the Antartide ecosystem (online shop, digital services,
+              games) and, in the future, on the global marketplace <strong>www.antartideshop.com</strong>
+              and other partners. The project takes inspiration from the seriousness and long-term
+              vision of networks such as Bitcoin, while remaining an independent and still
+              experimental cryptocurrency with its own risks. The creator is Italian but for now
+              prefers to remain anonymous; in the future they may decide to reveal their identity.
+              The focus is on the project and the infrastructure rather than personal branding.
+            </span>
+            <span class="lang-it">
+              AntartideCoin non nasce come “pump coin” speculativa di breve periodo, basata solo
+              sull’hype. L’obiettivo è costruire una moneta digitale solida e di lungo periodo,
+              utilizzabile come mezzo di scambio nell’ecosistema Antartide (shop online, servizi
+              digitali, giochi) e, in futuro, anche sul marketplace globale
+              <strong>www.antartideshop.com</strong> e su altri partner. Il progetto si ispira alla
+              serietà e alla visione di lungo periodo di reti come Bitcoin, pur restando una
+              criptovaluta indipendente e tuttora sperimentale, con i propri rischi. Il creatore è
+              italiano ma al momento preferisce restare anonimo; in futuro potrebbe decidere di
+              farsi conoscere. Il focus resta sul progetto e sull’infrastruttura più che sul
+              personal brand.
+            </span>
+          </p>
+          <div class="pill-list">
+            <div class="pill">
+              <span class="lang-en">No ICO</span><span class="lang-it">Nessuna ICO</span>
+            </div>
+            <div class="pill">
+              <span class="lang-en">No private pre–sale</span><span class="lang-it">Nessuna prevendita privata</span>
+            </div>
+            <div class="pill">
+              <span class="lang-en">Open mining</span><span class="lang-it">Mining aperto</span>
+            </div>
+            <div class="pill">
+              <span class="lang-en">Transparent supply &amp; rewards</span>
+              <span class="lang-it">Supply e reward trasparenti</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 style="font-size:14px; margin-bottom:6px;">
+            <span class="lang-en">Planned integrations</span>
+            <span class="lang-it">Integrazioni previste</span>
+          </h3>
+          <ul style="font-size:13px; color:var(--text-muted); padding-left:18px;">
+            <li>
+              <span class="lang-en">Payments with ANTR on the future global marketplace <strong>AntartideShop.com</strong></span>
+              <span class="lang-it">Pagamenti in ANTR sul futuro marketplace globale <strong>AntartideShop.com</strong></span>
+            </li>
+            <li>
+              <span class="lang-en">Games / mini–apps with rewards in ANTR</span>
+              <span class="lang-it">Giochi / mini-app con ricompense in ANTR</span>
+            </li>
+            <li>
+              <span class="lang-en">Dedicated desktop wallet (Windows, later other OS)</span>
+              <span class="lang-it">Wallet desktop dedicato (Windows, in futuro altri OS)</span>
+            </li>
+            <li>
+              <span class="lang-en">Possible integration with other Antartide projects and services</span>
+              <span class="lang-it">Possibile integrazione con altri progetti e servizi Antartide</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ECONOMICS -->
+    <section id="economics">
+      <div class="section-title">
+        <span class="lang-en">Economics &amp; Supply (basic tokenomics)</span>
+        <span class="lang-it">Economia &amp; Supply (tokenomics di base)</span>
+      </div>
+      <div class="section-sub">
+        <span class="lang-en">
+          The values below are indicative and may be updated in the official whitepaper.
+          They provide a simple overview of ANTR’s economic structure.
+        </span>
+        <span class="lang-it">
+          I valori qui sotto sono indicativi e potranno essere aggiornati nel whitepaper ufficiale.
+          Servono come panoramica semplice della struttura economica di ANTR.
+        </span>
+      </div>
+
+      <div class="cols-2">
+        <div>
+          <table class="token-table">
+            <thead>
+              <tr>
+                <th>
+                  <span class="lang-en">Parameter</span>
+                  <span class="lang-it">Parametro</span>
+                </th>
+                <th>
+                  <span class="lang-en">Indicative value</span>
+                  <span class="lang-it">Valore indicativo</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Algorithm</td>
+                <td>Scrypt</td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="lang-en">Target maximum supply</span>
+                  <span class="lang-it">Supply massima target</span>
+                </td>
+                <td>~36.5 billion ANTR</td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="lang-en">Premine / creator allocation*</span>
+                  <span class="lang-it">Premine / dotazione creatore*</span>
+                </td>
+                <td>
+                  <span class="lang-en">1,500,000,000 ANTR (created at launch)</span>
+                  <span class="lang-it">1.500.000.000 ANTR (creati all’avvio)</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="lang-en">Block emission</span>
+                  <span class="lang-it">Emissione blocchi</span>
+                </td>
+                <td>
+                  <span class="lang-en">Reward decreases over time</span>
+                  <span class="lang-it">Reward in diminuzione nel tempo</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="lang-en">Halving / reward reduction</span>
+                  <span class="lang-it">Halving / riduzione reward</span>
+                </td>
+                <td>about every 6 years (block–based)</td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="lang-en">Official pool dev fee</span>
+                  <span class="lang-it">Dev fee pool ufficiale</span>
+                </td>
+                <td>~1% (target)</td>
+              </tr>
+            </tbody>
+          </table>
+          <p style="font-size:11px; color:var(--text-muted); margin-top:6px;">
+            <span class="lang-en">
+              *At network launch, 1,500,000,000 ANTR were pre-mined to creator-controlled
+              wallets. This allocation is reserved for development, infrastructure,
+              future marketing and project treasury. A detailed transparency document
+              will explain addresses and usage.
+            </span>
+            <span class="lang-it">
+              *All’avvio della rete sono stati pre-minati 1.500.000.000 ANTR verso wallet
+              controllati dal creatore. Questa dotazione è destinata a sviluppo,
+              infrastruttura, marketing futuro e tesoreria del progetto. Un documento
+              di trasparenza dedicherà i dettagli su indirizzi e utilizzo.
+            </span>
+          </p>
+        </div>
+
+        <div>
+          <div class="card-grid-3">
+            <div class="card">
+              <h4>
+                <span class="lang-en">Controlled emission</span>
+                <span class="lang-it">Emissione controllata</span>
+              </h4>
+              <p>
+                <span class="lang-en">
+                  The code includes a progressive reduction of the block reward to avoid
+                  excessive long–term inflation.
+                </span>
+                <span class="lang-it">
+                  Il codice prevede una riduzione progressiva della reward per blocco,
+                  per evitare un’inflazione eccessiva nel lungo periodo.
+                </span>
+              </p>
+            </div>
+            <div class="card">
+              <h4>
+                <span class="lang-en">Mining–first distribution</span>
+                <span class="lang-it">Distribuzione via mining</span>
+              </h4>
+              <p>
+                <span class="lang-en">
+                  No ICO or public sale: new coins enter circulation mainly
+                  through mining plus the documented creator allocation.
+                </span>
+                <span class="lang-it">
+                  Nessuna ICO o vendita pubblica: le nuove monete entrano in circolazione
+                  principalmente tramite mining, oltre alla quota creatore documentata.
+                </span>
+              </p>
+            </div>
+            <div class="card">
+              <h4>
+                <span class="lang-en">Planned supply fork</span>
+                <span class="lang-it">Hard fork sulla supply</span>
+              </h4>
+              <p>
+                <span class="lang-en">
+                  In the future, a scheduled hard fork is planned to further reduce rewards
+                  once specific supply milestones are reached (e.g. around 1 billion ANTR).
+                </span>
+                <span class="lang-it">
+                  In futuro è previsto un hard fork programmato per ridurre ulteriormente
+                  le reward al raggiungimento di determinate soglie di supply
+                  (es. intorno a 1 miliardo di ANTR).
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROADMAP -->
+    <section id="roadmap">
+      <div class="section-title">
+        <span class="lang-en">Indicative roadmap (from 2026 onwards)</span>
+        <span class="lang-it">Roadmap indicativa (dal 2026 in poi)</span>
+      </div>
+      <div class="section-sub">
+        <span class="lang-en">
+          The roadmap officially starts in 2026. Dates may change depending on technical
+          results and community growth. First the technical base, then the ecosystem,
+          and only after that any structured marketing.
+        </span>
+        <span class="lang-it">
+          La roadmap parte ufficialmente dal 2026. Le date possono variare in base
+          ai risultati tecnici e alla crescita della community. Prima la base tecnica,
+          poi l’ecosistema e solo dopo un eventuale marketing strutturato.
+        </span>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <h4>2026</h4>
+          <strong>
+            <span class="lang-en">Network &amp; infrastructure setup</span>
+            <span class="lang-it">Setup rete &amp; infrastruttura</span>
+          </strong>
+          <ul>
+            <li>ANTR mainnet</li>
+            <li>
+              <span class="lang-en">Stable nodes and seed servers</span>
+              <span class="lang-it">Nodi e seed server stabili</span>
+            </li>
+            <li>
+              <span class="lang-en">Official explorer + mining pool</span>
+              <span class="lang-it">Explorer ufficiale + pool di mining</span>
+            </li>
+            <li>
+              <span class="lang-en">First desktop wallet version</span>
+              <span class="lang-it">Prima versione del wallet desktop</span>
+            </li>
+          </ul>
+        </div>
+        <div class="timeline-item">
+          <h4>2027</h4>
+          <strong>
+            <span class="lang-en">Wallet &amp; first integrations</span>
+            <span class="lang-it">Wallet &amp; prime integrazioni</span>
+          </strong>
+          <ul>
+            <li>
+              <span class="lang-en">Improved wallet (UI, advanced features)</span>
+              <span class="lang-it">Wallet migliorato (UI, funzioni avanzate)</span>
+            </li>
+            <li>
+              <span class="lang-en">First integrations with Antartide services / shop</span>
+              <span class="lang-it">Prime integrazioni con servizi / shop Antartide</span>
+            </li>
+            <li>
+              <span class="lang-en">Public technical documentation</span>
+              <span class="lang-it">Documentazione tecnica pubblica</span>
+            </li>
+          </ul>
+        </div>
+        <div class="timeline-item">
+          <h4>2028</h4>
+          <strong>
+            <span class="lang-en">Ecosystem expansion</span>
+            <span class="lang-it">Espansione ecosistema</span>
+          </strong>
+          <ul>
+            <li>
+              <span class="lang-en">Use of ANTR in services and games</span>
+              <span class="lang-it">Uso di ANTR in servizi e giochi</span>
+            </li>
+            <li>
+              <span class="lang-en">Basic tools for merchants</span>
+              <span class="lang-it">Strumenti base per merchant</span>
+            </li>
+            <li>
+              <span class="lang-en">Evaluation of eventual first exchange listings</span>
+              <span class="lang-it">Valutazione di eventuali prime listing su exchange</span>
+            </li>
+          </ul>
+        </div>
+        <div class="timeline-item">
+          <h4>Future</h4>
+          <strong>
+            <span class="lang-en">Hard fork &amp; long–term strategy</span>
+            <span class="lang-it">Hard fork &amp; strategia di lungo periodo</span>
+          </strong>
+          <ul>
+            <li>
+              <span class="lang-en">Planned hard fork on supply/rewards at defined milestones</span>
+              <span class="lang-it">Hard fork pianificato su supply/reward a soglie definite</span>
+            </li>
+            <li>
+              <span class="lang-en">Structured marketing only after technical maturity</span>
+              <span class="lang-it">Marketing strutturato solo dopo la maturità tecnica</span>
+            </li>
+            <li>
+              <span class="lang-en">Deeper integration with the global marketplace AntartideShop.com</span>
+              <span class="lang-it">Integrazione più profonda con il marketplace globale AntartideShop.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- MINING & POOL -->
+    <section id="mining">
+      <div class="section-title">
+        <span class="lang-en">Mining &amp; official pool</span>
+        <span class="lang-it">Mining &amp; pool ufficiale</span>
+      </div>
+      <div class="section-sub">
+        <span class="lang-en">
+          AntartideCoin uses the Scrypt algorithm. Mining is open: anyone with suitable
+          hardware can participate, respecting the pool rules.
+        </span>
+        <span class="lang-it">
+          AntartideCoin utilizza l’algoritmo Scrypt. Il mining è aperto: chiunque abbia
+          hardware adeguato può partecipare, rispettando le regole della pool.
+        </span>
+      </div>
+
+      <div class="cols-2">
+        <div>
+          <h3 style="font-size:14px; margin-bottom:6px;">
+            <span class="lang-en">Official pool</span>
+            <span class="lang-it">Pool ufficiale</span>
+          </h3>
+          <ul class="link-list">
+            <li>
+              <a href="https://pool.antartidecoin.org" target="_blank" rel="noopener">
+                pool.antartidecoin.org
+              </a>
+              <small>(main ANTR mining pool)</small>
+            </li>
+          </ul>
+          <p style="font-size:13px; color:var(--text-muted); margin-top:6px;">
+            <span class="lang-en">Available Stratum ports (example):</span>
+            <span class="lang-it">Porte Stratum disponibili (esempio):</span>
+          </p>
+          <ul style="font-size:13px; color:var(--text-muted); padding-left:18px;">
+            <li>
+              <strong>3333</strong> – 
+              <span class="lang-en">VarDiff for standard miners (GPU / small ASIC)</span>
+              <span class="lang-it">VarDiff per miner standard (GPU / ASIC piccoli)</span>
+            </li>
+            <li>
+              <strong>3433</strong> – 
+              <span class="lang-en">Light VarDiff / low difficulty (when enabled)</span>
+              <span class="lang-it">VarDiff leggera / bassa difficoltà (quando attiva)</span>
+            </li>
+            <li>
+              <strong>3533</strong> – 
+              <span class="lang-en">High-diff port for powerful ASICs</span>
+              <span class="lang-it">Porta a difficoltà alta per ASIC potenti</span>
+            </li>
+          </ul>
+          <p style="font-size:11px; color:var(--text-muted); margin-top:6px;">
+            <span class="lang-en">
+              Exact parameters (fees, minimum payout, confirmation count) will be listed in the
+              “ANTR Pool Rules” document and in the pool UI.
+            </span>
+            <span class="lang-it">
+              I parametri esatti (fee, payout minimo, conferme) saranno indicati nel documento
+              “Regolamento pool ANTR” e nell’interfaccia della pool.
+            </span>
+          </p>
+        </div>
+        <div>
+          <h3 style="font-size:14px; margin-bottom:6px;">
+            <span class="lang-en">Basic pool rules</span>
+            <span class="lang-it">Regole base della pool</span>
+          </h3>
+          <ul style="font-size:13px; color:var(--text-muted); padding-left:18px;">
+            <li>
+              <span class="lang-en">Official pool dev fee: about 1%</span>
+              <span class="lang-it">Dev fee della pool ufficiale: circa 1%</span>
+            </li>
+            <li>
+              <span class="lang-en">Minimum payout: ANTR threshold defined in the pool rules</span>
+              <span class="lang-it">Payout minimo: soglia ANTR definita nel regolamento pool</span>
+            </li>
+            <li>
+              <span class="lang-en">No attacks, exploits or abusive use of the infrastructure</span>
+              <span class="lang-it">Vietati attacchi, exploit o uso abusivo dell’infrastruttura</span>
+            </li>
+            <li>
+              <span class="lang-en">Transparency: public stats on blocks and rewards</span>
+              <span class="lang-it">Trasparenza: statistiche pubbliche su blocchi e reward</span>
+            </li>
+          </ul>
+          <p style="font-size:11px; color:var(--text-muted); margin-top:6px;">
+            <span class="lang-en">
+              Full details will be published in the “ANTR Pool Rules” document.
+            </span>
+            <span class="lang-it">
+              I dettagli completi saranno pubblicati nel documento “Regolamento pool ANTR”.
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <!-- HOW TO START MINING -->
+      <div style="margin-top:18px;">
+        <h3 style="font-size:14px; margin-bottom:6px;">
+          <span class="lang-en">How to start mining ANTR</span>
+          <span class="lang-it">Come iniziare a minare ANTR</span>
+        </h3>
+        <ol class="steps-list">
+          <li>
+            <span class="lang-en">
+              Download the official wallet, install it and create an ANTR address (Receive section).
+            </span>
+            <span class="lang-it">
+              Scarica il wallet ufficiale, installalo e crea un indirizzo ANTR (sezione Ricevi).
+            </span>
+          </li>
+          <li>
+            <span class="lang-en">
+              Choose the Stratum port on <strong>pool.antartidecoin.org</strong> according to your hashrate
+              (3333 for most users, 3533 for strong ASICs).
+            </span>
+            <span class="lang-it">
+              Scegli la porta Stratum su <strong>pool.antartidecoin.org</strong> in base al tuo hashrate
+              (3333 per la maggior parte degli utenti, 3533 per ASIC potenti).
+            </span>
+          </li>
+          <li>
+            <span class="lang-en">
+              Configure your miner using your own ANTR address as username.
+            </span>
+            <span class="lang-it">
+              Configura il tuo miner usando il tuo indirizzo ANTR come username.
+            </span>
+          </li>
+        </ol>
+
+        <div class="code-block">
+          <strong>
+            <span class="lang-en">Example (cpuminer / GPU miner):</span>
+            <span class="lang-it">Esempio (cpuminer / miner GPU):</span>
+          </strong>
+          <br>
+          <span class="lang-en">Standard port:</span>
+          <span class="lang-it">Porta standard:</span>
+<code>./cpuminer -a scrypt \
+  -o stratum+tcp://pool.antartidecoin.org:3333 \
+  -u TUO_INDIRIZZO_ANTR \
+  -p c=ANTR</code>
+          <br><br>
+          <span class="lang-en">High-diff port (powerful ASICs):</span>
+          <span class="lang-it">Porta ad alta difficoltà (ASIC potenti):</span>
+<code>./cpuminer -a scrypt \
+  -o stratum+tcp://pool.antartidecoin.org:3533 \
+  -u TUO_INDIRIZZO_ANTR \
+  -p c=ANTR</code>
+        </div>
+
+        <div class="code-block" style="margin-top:8px;">
+          <strong>ASIC (es. Antminer L3+)</strong><br>
+          URL: <code>stratum+tcp://pool.antartidecoin.org:3333</code><br>
+          Worker: <code>TUO_INDIRIZZO_ANTR.L3</code><br>
+          Password: <code>c=ANTR</code> (o semplicemente <code>x</code> se richiesto)
+        </div>
+      </div>
+    </section>
+
+    <!-- WALLET -->
+    <section id="wallet">
+      <div class="section-title">
+        <span class="lang-en">Wallet &amp; downloads</span>
+        <span class="lang-it">Wallet &amp; download</span>
+      </div>
+      <div class="section-sub">
+        <span class="lang-en">
+          The AntartideCoin wallet lets you send, receive and manage ANTR easily.
+          The initial focus is on desktop (Windows).
+        </span>
+        <span class="lang-it">
+          Il wallet AntartideCoin permette di inviare, ricevere e gestire ANTR in modo semplice.
+          Il focus iniziale è sulla versione desktop (Windows).
+        </span>
+      </div>
+
+      <div class="cols-2">
+        <div>
+          <h3 style="font-size:14px; margin-bottom:6px;">
+            <span class="lang-en">Downloads</span>
+            <span class="lang-it">Download</span>
+          </h3>
+          <ul class="link-list">
+            <li>
+              <a href="#" target="_blank" rel="noopener">
+                <span class="lang-en">Download AntartideCoin Wallet – Windows (.exe)</span>
+                <span class="lang-it">Scarica AntartideCoin Wallet – Windows (.exe)</span>
+              </a>
+              <small>(add the real link when ready)</small>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener">
+                <span class="lang-en">Portable version (.zip)</span>
+                <span class="lang-it">Versione portatile (.zip)</span>
+              </a>
+              <small>(optional)</small>
+            </li>
+          </ul>
+          <p style="font-size:11px; color:var(--text-muted); margin-top:8px;">
+            <span class="lang-en">
+              Never share your seed phrase, backup files or private keys. The project
+              team will never ask you for this information.
+            </span>
+            <span class="lang-it">
+              Non condividere mai la tua seed phrase, i file di backup o le chiavi private.
+              Il team del progetto non chiederà mai queste informazioni.
+            </span>
+          </p>
+        </div>
+        <div>
+          <h3 style="font-size:14px; margin-bottom:6px;">
+            <span class="lang-en">Planned features</span>
+            <span class="lang-it">Caratteristiche previste</span>
+          </h3>
+          <ul style="font-size:13px; color:var(--text-muted); padding-left:18px;">
+            <li>
+              <span class="lang-en">Dark theme with Antartide branding</span>
+              <span class="lang-it">Tema scuro con branding Antartide</span>
+            </li>
+            <li>
+              <span class="lang-en">Connection to an official remote ANTR node</span>
+              <span class="lang-it">Connessione a un nodo ANTR remoto ufficiale</span>
+            </li>
+            <li>
+              <span class="lang-en">Balance, transactions and address management</span>
+              <span class="lang-it">Gestione saldo, transazioni e indirizzi</span>
+            </li>
+            <li>
+              <span class="lang-en">Send &amp; receive with QR code</span>
+              <span class="lang-it">Invio e ricezione con QR code</span>
+            </li>
+            <li>
+              <span class="lang-en">Wallet backup and restore tools</span>
+              <span class="lang-it">Strumenti per backup e ripristino del wallet</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOCS & TRANSPARENCY -->
+    <section id="docs">
+      <div class="section-title">
+        <span class="lang-en">Documentation &amp; transparency</span>
+        <span class="lang-it">Documentazione &amp; trasparenza</span>
+      </div>
+      <div class="section-sub">
+        <span class="lang-en">
+          Transparency is a core value of the AntartideCoin project. Official documents
+          are published here in English and Italian.
+        </span>
+        <span class="lang-it">
+          La trasparenza è un valore centrale del progetto AntartideCoin. I documenti ufficiali
+          sono pubblicati qui in inglese e italiano.
+        </span>
+      </div>
+
+      <div class="cols-2">
+        <div>
+          <h3 style="font-size:14px; margin-bottom:6px;">
+            <span class="lang-en">Official documents (PDF)</span>
+            <span class="lang-it">Documenti ufficiali (PDF)</span>
+          </h3>
+          <ul class="link-list">
+            <li>
+              <a href="docs/ANTR_Whitepaper_EN_IT.pdf" target="_blank" rel="noopener">
+                ANTR Whitepaper (EN/IT)
+              </a>
+              <small>
+                <span class="lang-en">Technical and economic overview of AntartideCoin.</span>
+                <span class="lang-it">Panoramica tecnica ed economica di AntartideCoin.</span>
+              </small>
+            </li>
+            <li>
+              <a href="docs/ANTR_Emission_and_Supply_Rules_EN_IT.pdf" target="_blank" rel="noopener">
+                Emission &amp; Supply Rules (EN/IT)
+              </a>
+              <small>
+                <span class="lang-en">Rules for block rewards, supply and premine.</span>
+                <span class="lang-it">Regole su reward per blocco, supply e premine.</span>
+              </small>
+            </li>
+            <li>
+              <a href="docs/ANTR_Official_Pool_Rules_EN_IT.pdf" target="_blank" rel="noopener">
+                Official Pool Rules (EN/IT)
+              </a>
+              <small>
+                <span class="lang-en">Regulation of the official ANTR mining pool.</span>
+                <span class="lang-it">Regolamento della pool di mining ufficiale ANTR.</span>
+              </small>
+            </li>
+            <li>
+              <a href="docs/ANTR_Rewards_and_Supply_Report_01_EN_IT.pdf" target="_blank" rel="noopener">
+                Rewards &amp; Supply Report n.1 (EN/IT)
+              </a>
+              <small>
+                <span class="lang-en">Baseline report on rewards, supply and transparency framework.</span>
+                <span class="lang-it">Report di base su reward, supply e impostazione della trasparenza.</span>
+              </small>
+            </li>
+          </ul>
+          <p style="font-size:11px; color:var(--text-muted); margin-top:8px;">
+            <span class="lang-en">
+              Updated versions of these PDFs will keep the same filenames. Always make sure you
+              are downloading them directly from <strong>antartidecoin.com</strong>.
+            </span>
+            <span class="lang-it">
+              Le versioni aggiornate di questi PDF manterranno gli stessi nomi file. Assicurati
+              sempre di scaricarli direttamente da <strong>antartidecoin.com</strong>.
+            </span>
+          </p>
+        </div>
+        <div>
+          <h3 style="font-size:14px; margin-bottom:6px;">
+            <span class="lang-en">Important notices</span>
+            <span class="lang-it">Avvertenze importanti</span>
+          </h3>
+          <p style="font-size:13px; color:var(--text-muted);">
+            <span class="lang-en">
+              AntartideCoin is an experimental project. Holding or using ANTR involves
+              risks (volatility, technical risks, regulatory uncertainty). Nothing on
+              this website or in the PDFs is financial, legal or tax advice.
+            </span>
+            <span class="lang-it">
+              AntartideCoin è un progetto sperimentale. Detenere o utilizzare ANTR comporta
+              rischi (volatilità, rischi tecnici, incertezza normativa). Nulla su questo sito
+              o nei PDF costituisce consulenza finanziaria, legale o fiscale.
+            </span>
+          </p>
+          <p style="font-size:11px; color:var(--text-muted); margin-top:6px;">
+            <span class="lang-en">
+              Before using ANTR, do your own research, never risk more than you can afford
+              to lose and always check the regulations of your country.
+            </span>
+            <span class="lang-it">
+              Prima di usare ANTR, informati bene, non rischiare mai più di quanto puoi
+              permetterti di perdere e verifica sempre le normative del tuo Paese.
+            </span>
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    <!-- CONTACTS -->
+    <section id="contact">
+      <div class="section-title">
+        <span class="lang-en">Contacts &amp; community</span>
+        <span class="lang-it">Contatti &amp; community</span>
+      </div>
+      <div class="section-sub">
+        <span class="lang-en">
+          Official channels and contacts will be listed here. Avoid channels that are not
+          mentioned: they may not be related to the project.
+        </span>
+        <span class="lang-it">
+          I canali ufficiali e i contatti saranno elencati qui. Evita canali non presenti
+          in elenco: potrebbero non essere collegati al progetto.
+        </span>
+      </div>
+
+      <ul class="link-list">
+        <li>
+          <a href="https://explorer.antartidecoin.org" target="_blank" rel="noopener">Official ANTR explorer</a>
+          <small>(explorer.antartidecoin.org)</small>
+        </li>
+        <li>
+          <a href="https://pool.antartidecoin.org" target="_blank" rel="noopener">Official pool</a>
+          <small>(pool.antartidecoin.org)</small>
+        </li>
+        <li>
+          <a href="mailto:info@antartidecoin.com">info@antartidecoin.com</a>
+          <small>(general contact / contatto generale)</small>
+        </li>
+      </ul>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-links">
+        <a href="#">
+          <span class="lang-en">Terms of use</span>
+          <span class="lang-it">Termini d’uso</span>
+        </a>
+        <a href="#">
+          <span class="lang-en">Privacy policy</span>
+          <span class="lang-it">Informativa privacy</span>
+        </a>
+        <a href="#">
+          <span class="lang-en">Cookie policy</span>
+          <span class="lang-it">Cookie policy</span>
+        </a>
+        <a href="#">
+          <span class="lang-en">Legal notes</span>
+          <span class="lang-it">Note legali</span>
+        </a>
+      </div>
+      <small>
+        © <span id="year"></span> AntartideCoin (ANTR) –
+        <span class="lang-en">The ice coin</span>
+        <span class="lang-it">La moneta ghiaccio</span>.
+        <span class="lang-en">All rights reserved.</span>
+        <span class="lang-it">Tutti i diritti riservati.</span>
+      </small>
+      <small style="margin-top:2px;">
+        <span class="lang-en">
+          This website is for informational purposes only and does not constitute an invitation
+          to invest, a public offering or financial advice of any kind.
+        </span>
+        <span class="lang-it">
+          Questo sito ha solo scopo informativo e non costituisce in alcun modo un invito
+          all’investimento, un’offerta al pubblico o una consulenza finanziaria.
+        </span>
+      </small>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const langButtons = document.querySelectorAll('.lang-btn');
+    const langNotice = document.getElementById('lang-notice');
+
+    function setLang(lang) {
+      document.body.setAttribute('data-lang', lang);
+      langButtons.forEach(b => {
+        if (b.dataset.lang === lang) b.classList.add('active');
+        else b.classList.remove('active');
+      });
+      if (lang === 'it') {
+        langNotice.style.display = 'block';
+      } else {
+        langNotice.style.display = 'none';
+      }
+    }
+
+    langButtons.forEach(btn => {
+      btn.addEventListener('click', () => setLang(btn.dataset.lang));
+    });
+
+    setLang('en');
+  </script>
+</body>
+</html>
