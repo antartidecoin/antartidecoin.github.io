@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>AntartideCoin (ANTR) – Legal & Privacy</title>
+  <title>AntartideCoin – Legal / Legale</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Legal information, terms of use, privacy and cookie policy for the AntartideCoin (ANTR) project.">
+  <meta name="description" content="Legal information for AntartideCoin (ANTR): terms of use, privacy policy, cookie policy and legal notes.">
   <link rel="icon" href="favicoin.ico" sizes="any">
   <style>
     :root {
@@ -19,7 +19,6 @@
       --radius-lg: 18px;
       --shadow-soft: 0 18px 45px rgba(0,0,0,0.55);
     }
-
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -27,657 +26,341 @@
       color: var(--text-main);
       line-height: 1.6;
     }
-    a { color: inherit; text-decoration: none; }
-    img { max-width: 100%; display: block; }
-
-    .wrapper {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 20px 18px 60px;
-    }
-
-    /* Header */
+    a { color: var(--accent-soft); text-decoration: none; }
+    a:hover { text-decoration: underline; }
     header {
-      position: sticky;
-      top: 0;
-      z-index: 20;
-      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
       background: linear-gradient(to bottom, rgba(3,7,16,0.95), rgba(3,7,16,0.75));
-      border-bottom: 1px solid rgba(255,255,255,0.04);
+      padding: 14px 18px;
     }
-    .nav {
-      max-width: 960px;
+    .header-inner {
+      max-width: 1120px;
       margin: 0 auto;
-      padding: 10px 18px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 16px;
+      gap: 14px;
     }
-    .nav-left {
+    .logo-wrap {
       display: flex;
       align-items: center;
       gap: 10px;
     }
-    .logo-img {
-      width: 38px;
-      height: 38px;
+    .logo-wrap img {
+      width: 34px;
+      height: 34px;
       border-radius: 999px;
       box-shadow: 0 0 18px rgba(76,241,211,0.65);
     }
-    .brand-text-main { font-weight: 700; font-size: 18px; }
-    .brand-text-sub {
+    .brand-main { font-weight: 700; font-size: 18px; }
+    .brand-sub {
       font-size: 11px;
       color: var(--text-muted);
       text-transform: uppercase;
       letter-spacing: 0.15em;
     }
-    .nav-right {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .nav-links {
-      display: flex;
-      gap: 12px;
-      font-size: 13px;
-      color: var(--text-muted);
-    }
-    .nav-links a {
-      padding: 6px 10px;
-      border-radius: 999px;
-      border: 1px solid transparent;
-    }
-    .nav-links a:hover {
-      color: var(--text-main);
-      border-color: rgba(255,255,255,0.12);
-      background: radial-gradient(circle at top, rgba(40,216,255,0.12), transparent 60%);
-    }
-
-    .lang-switch {
+    .btn-back {
       display: inline-flex;
-      gap: 4px;
-      padding: 2px;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
       border-radius: 999px;
-      background: rgba(4,13,22,0.9);
-      border: 1px solid rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.18);
+      background: rgba(8,27,43,0.85);
+      font-size: 12px;
+      color: var(--text-main);
+      text-decoration: none;
     }
-    .lang-btn {
-      border: none;
-      background: transparent;
-      color: var(--text-muted);
-      font-size: 11px;
-      padding: 4px 8px;
-      border-radius: 999px;
-      cursor: pointer;
+    .btn-back:hover {
+      border-color: var(--accent);
+      background: radial-gradient(circle at top, rgba(40,216,255,0.16), rgba(8,27,43,0.95));
     }
-    .lang-btn.active {
-      background: linear-gradient(135deg, #28d8ff, #4cf1d3);
-      color: #021018;
-      font-weight: 600;
+    main {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 24px 18px 48px;
     }
-
-    .lang-en, .lang-it { display: none; }
-    body[data-lang="en"] .lang-en { display: inline; }
-    body[data-lang="it"] .lang-it { display: inline; }
-
-    /* Sections */
     section {
-      margin-top: 26px;
-      padding: 20px 18px;
+      margin-top: 18px;
+      padding: 18px 18px 20px;
       border-radius: var(--radius-xl);
       border: 1px solid var(--border-soft);
       background: linear-gradient(145deg, rgba(4,15,25,0.96), rgba(2,9,16,0.98));
-      box-shadow: 0 18px 40px rgba(0,0,0,0.55);
+      box-shadow: var(--shadow-soft);
+      font-size: 14px;
     }
-    .section-title {
-      font-size: 20px;
-      font-weight: 700;
+    h1 {
+      font-size: 24px;
       margin-bottom: 6px;
     }
-    .section-sub {
+    .intro {
       font-size: 13px;
       color: var(--text-muted);
-      margin-bottom: 10px;
+      margin-bottom: 6px;
     }
-    .section-body {
-      font-size: 13px;
-      color: var(--text-muted);
+    h2 {
+      font-size: 18px;
+      margin-bottom: 6px;
     }
-    .section-body h3 {
+    h3 {
       font-size: 15px;
-      margin-top: 16px;
+      margin-top: 10px;
       margin-bottom: 4px;
-      color: var(--text-main);
     }
-    .section-body p { margin-top: 4px; }
-    .section-body ul {
-      margin-top: 4px;
-      margin-left: 18px;
+    p { margin-bottom: 6px; }
+    ul { margin: 4px 0 8px 18px; }
+    li { margin-bottom: 3px; }
+    .lang-block {
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px dashed rgba(255,255,255,0.18);
+      font-size: 13px;
     }
-    .section-body li { margin-top: 3px; }
-
+    .lang-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .16em;
+      color: var(--accent-soft);
+      margin-bottom: 2px;
+      display: block;
+    }
     footer {
+      max-width: 1120px;
+      margin: 0 auto 20px;
+      padding: 0 18px;
       font-size: 11px;
       color: var(--text-muted);
-      margin-top: 18px;
       text-align: center;
     }
-    footer .footer-links {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
-      margin-bottom: 6px;
-    }
-    footer a { color: var(--accent-soft); }
-
-    @media (max-width: 720px) {
-      .nav-links { display: none; }
-      .wrapper { padding-inline: 14px; }
-      section { padding: 16px 14px; }
+    @media (max-width: 600px) {
+      section { padding: 16px 14px 18px; }
+      main { padding-inline: 14px; }
+      header { padding-inline: 14px; }
     }
   </style>
 </head>
-<body data-lang="en">
+<body>
   <header>
-    <div class="nav">
-      <div class="nav-left">
-        <img src="logo.png" alt="AntartideCoin logo" class="logo-img">
+    <div class="header-inner">
+      <div class="logo-wrap">
+        <img src="logo.png" alt="AntartideCoin logo">
         <div>
-          <div class="brand-text-main">AntartideCoin</div>
-          <div class="brand-text-sub">
-            <span class="lang-en">The ice coin – ANTR</span>
-            <span class="lang-it">La moneta ghiaccio – ANTR</span>
-          </div>
+          <div class="brand-main">AntartideCoin</div>
+          <div class="brand-sub">THE ICE COIN – ANTR</div>
         </div>
       </div>
-      <div class="nav-right">
-        <nav class="nav-links">
-          <a href="index.html#top">
-            <span class="lang-en">← Back to website</span>
-            <span class="lang-it">← Torna al sito</span>
-          </a>
-        </nav>
-        <div class="lang-switch">
-          <button class="lang-btn active" data-lang="en">EN</button>
-          <button class="lang-btn" data-lang="it">IT</button>
-        </div>
-      </div>
+      <a href="index.html#top" class="btn-back">← Back to home / Torna al sito</a>
     </div>
   </header>
 
-  <main class="wrapper">
-    <!-- INTRO -->
-    <section id="legal-overview">
-      <div class="section-title">
-        <span class="lang-en">Legal information</span>
-        <span class="lang-it">Informazioni legali</span>
-      </div>
-      <div class="section-sub">
-        <span class="lang-en">
-          This page contains a basic template for terms of use, privacy and cookie information
-          relating to the AntartideCoin (ANTR) project website. It is a general, non-exhaustive
-          text and does not replace specific legal advice.
-        </span>
-        <span class="lang-it">
-          Questa pagina contiene un modello di base per termini d’uso, privacy e informazioni sui
-          cookie relative al sito del progetto AntartideCoin (ANTR). Si tratta di un testo generale
-          e non esaustivo, che non sostituisce in alcun modo la consulenza di un professionista.
-        </span>
-      </div>
-      <div class="section-body">
-        <p>
-          <span class="lang-en">
-            The project recommends that the website owner has this page reviewed and adapted by a
-            qualified legal professional, especially with regard to local regulations (for example,
-            EU GDPR and national implementations).
-          </span>
-          <span class="lang-it">
-            Si raccomanda che il titolare del sito faccia revisionare e adattare questa pagina da un
-            professionista qualificato, in particolare rispetto alle normative locali applicabili
-            (ad esempio GDPR UE e relative norme nazionali).
-          </span>
-        </p>
-      </div>
+  <main>
+    <section id="intro">
+      <h1>Legal information / Informazioni legali</h1>
+      <p class="intro">
+        This page provides a basic legal framework for the AntartideCoin (ANTR) website:
+        terms of use, privacy policy, cookie policy and legal notes. This is a general
+        template and does not replace personalised legal advice.
+      </p>
+      <p class="intro">
+        Questa pagina fornisce un quadro legale di base per il sito AntartideCoin (ANTR):
+        termini d’uso, informativa privacy, cookie policy e note legali. Si tratta di un
+        modello generale e non sostituisce una consulenza legale personalizzata.
+      </p>
     </section>
 
-    <!-- TERMS OF USE -->
+    <!-- TERMS -->
     <section id="terms">
-      <div class="section-title">
-        <span class="lang-en">1. Terms of use</span>
-        <span class="lang-it">1. Termini d’uso</span>
+      <h2>1. Terms of use / Termini d’uso</h2>
+
+      <div class="lang-block">
+        <span class="lang-label">EN</span>
+        <p>
+          By accessing and using this website, you agree to these Terms of Use. If you do not
+          agree, please do not use the website.
+        </p>
+        <p>
+          The AntartideCoin website is provided “as is” for informational purposes only.
+          No guarantee is given that the content is complete, accurate, up to date or suitable
+          for any particular purpose. The project team may modify or remove content, features
+          or services at any time without notice.
+        </p>
+        <p>
+          You agree not to use the website in any way that is unlawful, harmful to the project
+          or to third parties, or that may compromise the security and proper functioning of
+          the infrastructure (for example: attacks, attempts to breach security, abuse of
+          services or resources).
+        </p>
       </div>
-      <div class="section-body">
-        <h3>
-          <span class="lang-en">1.1 Nature of the website</span>
-          <span class="lang-it">1.1 Natura del sito</span>
-        </h3>
-        <p>
-          <span class="lang-en">
-            This website is an informational portal about the AntartideCoin (ANTR) project. It does
-            not offer financial, investment, legal or tax advice and does not constitute a
-            solicitation to invest, a public offering or any form of crowdfunding.
-          </span>
-          <span class="lang-it">
-            Questo sito è un portale informativo sul progetto AntartideCoin (ANTR). Non offre
-            consulenza finanziaria, di investimento, legale o fiscale e non costituisce sollecitazione
-            all’investimento, offerta al pubblico o forma di crowdfunding.
-          </span>
-        </p>
 
-        <h3>
-          <span class="lang-en">1.2 Experimental project and risks</span>
-          <span class="lang-it">1.2 Progetto sperimentale e rischi</span>
-        </h3>
+      <div class="lang-block">
+        <span class="lang-label">IT</span>
         <p>
-          <span class="lang-en">
-            AntartideCoin is an independent and experimental cryptocurrency project. Holding, using
-            or mining ANTR involves risks including, without limitation, high price volatility,
-            technical and cybersecurity risks, possible software errors and regulatory uncertainty.
-            Users should only use ANTR after having carefully assessed these risks and never risking
-            more than they can afford to lose.
-          </span>
-          <span class="lang-it">
-            AntartideCoin è un progetto di criptovaluta indipendente e sperimentale. Detenere,
-            utilizzare o minare ANTR comporta rischi, tra cui, a titolo esemplificativo, forte
-            volatilità del prezzo, rischi tecnici e di sicurezza informatica, possibili errori
-            software e incertezza normativa. Gli utenti dovrebbero utilizzare ANTR solo dopo aver
-            valutato attentamente tali rischi e senza mai rischiare più di quanto possono
-            permettersi di perdere.
-          </span>
+          Accedendo e utilizzando questo sito web accetti i presenti Termini d’uso. Se non sei
+          d’accordo, ti invitiamo a non utilizzare il sito.
         </p>
-
-        <h3>
-          <span class="lang-en">1.3 No guarantee of availability or correctness</span>
-          <span class="lang-it">1.3 Nessuna garanzia di disponibilità o correttezza</span>
-        </h3>
         <p>
-          <span class="lang-en">
-            The website, explorer, mining pool and any wallet software may be updated, suspended or
-            discontinued at any time, without notice. Although the project team strives to provide
-            correct and up-to-date information, no guarantee is given that the content is complete,
-            accurate or free of errors.
-          </span>
-          <span class="lang-it">
-            Il sito, l’explorer, la pool di mining e gli eventuali software wallet possono essere
-            aggiornati, sospesi o interrotti in qualsiasi momento, senza preavviso. Pur impegnandosi
-            a fornire informazioni corrette e aggiornate, il team del progetto non garantisce che i
-            contenuti siano completi, accurati o privi di errori.
-          </span>
+          Il sito AntartideCoin è fornito “così com’è” e ha finalità esclusivamente informative.
+          Non viene fornita alcuna garanzia sul fatto che i contenuti siano completi, accurati,
+          aggiornati o idonei a uno scopo specifico. Il team di progetto può modificare o
+          rimuovere contenuti, funzionalità o servizi in qualsiasi momento e senza preavviso.
         </p>
-
-        <h3>
-          <span class="lang-en">1.4 Prohibited uses</span>
-          <span class="lang-it">1.4 Usi non consentiti</span>
-        </h3>
         <p>
-          <span class="lang-en">
-            It is forbidden to use this website or the AntartideCoin infrastructure (including
-            nodes, explorer and mining pool) for unlawful purposes, for activities that violate
-            third-party rights or in ways that could compromise the security or availability of
-            the services (for example, attacks, attempts to exploit vulnerabilities, abusive
-            automated traffic).
-          </span>
-          <span class="lang-it">
-            È vietato utilizzare questo sito o l’infrastruttura AntartideCoin (inclusi nodi,
-            explorer e pool di mining) per scopi illeciti, per attività che violino i diritti di
-            terzi o in modalità che possano compromettere la sicurezza o la disponibilità dei
-            servizi (ad esempio attacchi, tentativi di sfruttare vulnerabilità, traffico
-            automatizzato abusivo).
-          </span>
-        </p>
-
-        <h3>
-          <span class="lang-en">1.5 Official downloads</span>
-          <span class="lang-it">1.5 Download ufficiali</span>
-        </h3>
-        <p>
-          <span class="lang-en">
-            Only wallet and software versions linked directly from the official website
-            <strong>antartidecoin.com</strong> (or from the official GitHub repository indicated on
-            this website) must be considered official. Users are strongly advised not to download
-            AntartideCoin software from other websites or channels.
-          </span>
-          <span class="lang-it">
-            Sono da considerarsi ufficiali solo le versioni di wallet e software collegate
-            direttamente dal sito <strong>antartidecoin.com</strong> (o dal repository GitHub
-            ufficiale indicato su questo sito). Si raccomanda vivamente di non scaricare software
-            AntartideCoin da altri siti o canali.
-          </span>
-        </p>
-
-        <h3>
-          <span class="lang-en">1.6 Applicable law and jurisdiction</span>
-          <span class="lang-it">1.6 Legge applicabile e foro competente</span>
-        </h3>
-        <p>
-          <span class="lang-en">
-            Unless otherwise required by mandatory provisions, the information on this website is
-            primarily governed by the laws of the country where the project owner is based
-            (currently Italy), without prejudice to the application of mandatory consumer or data
-            protection rules of other countries where applicable.
-          </span>
-          <span class="lang-it">
-            Salvo diversa previsione di norme imperative, le informazioni presenti su questo sito
-            sono principalmente soggette alle leggi del Paese in cui ha sede il titolare del
-            progetto (attualmente l’Italia), restando ferma l’applicazione delle norme imperative
-            a tutela dei consumatori o dei dati personali di altri Paesi, ove applicabili.
-          </span>
+          Ti impegni a non utilizzare il sito in modo illecito, dannoso per il progetto o per
+          terzi, o che possa compromettere la sicurezza e il corretto funzionamento
+          dell’infrastruttura (ad esempio: attacchi, tentativi di violazione, uso abusivo di
+          servizi o risorse).
         </p>
       </div>
     </section>
 
     <!-- PRIVACY -->
     <section id="privacy">
-      <div class="section-title">
-        <span class="lang-en">2. Privacy information</span>
-        <span class="lang-it">2. Informazioni sulla privacy</span>
+      <h2>2. Privacy policy / Informativa privacy</h2>
+
+      <div class="lang-block">
+        <span class="lang-label">EN</span>
+        <p>
+          The AntartideCoin website is currently designed to minimise the collection of
+          personal data. However, some technical data (such as IP address, browser type,
+          approximate location) may be processed automatically by the hosting provider or
+          security systems in order to ensure the functioning and protection of the website.
+        </p>
+        <p>
+          If you contact the project by email or through future contact forms, the information
+          you provide (such as name, email address and message content) will be used solely to
+          respond to your request and for technical or support purposes.
+        </p>
+        <p>
+          Your data will not be sold to third parties. Any future additional processing
+          (for example newsletters, accounts, marketing) will be described in an updated
+          privacy policy.
+        </p>
       </div>
-      <div class="section-body">
-        <h3>
-          <span class="lang-en">2.1 Data controller</span>
-          <span class="lang-it">2.1 Titolare del trattamento</span>
-        </h3>
-        <p>
-          <span class="lang-en">
-            The data controller for the information collected through this website is the owner of
-            the AntartideCoin project, contactable via the email address
-            <strong>info@antartidecoin.com</strong>.
-          </span>
-          <span class="lang-it">
-            Il titolare del trattamento dei dati eventualmente raccolti tramite questo sito è il
-            proprietario del progetto AntartideCoin, contattabile all’indirizzo email
-            <strong>info@antartidecoin.com</strong>.
-          </span>
-        </p>
 
-        <h3>
-          <span class="lang-en">2.2 Type of data processed</span>
-          <span class="lang-it">2.2 Tipologia di dati trattati</span>
-        </h3>
+      <div class="lang-block">
+        <span class="lang-label">IT</span>
         <p>
-          <span class="lang-en">
-            The website is mainly informational and does not require user registration. In general,
-            the following data may be processed:
-          </span>
-          <span class="lang-it">
-            Il sito ha natura prevalentemente informativa e non richiede registrazione da parte
-            dell’utente. In linea generale, possono essere trattati i seguenti dati:
-          </span>
+          Il sito AntartideCoin è attualmente progettato per ridurre al minimo la raccolta di
+          dati personali. Alcuni dati tecnici (come indirizzo IP, tipo di browser, posizione
+          approssimativa) possono tuttavia essere trattati automaticamente dal provider di
+          hosting o da sistemi di sicurezza al solo scopo di garantire il funzionamento e la
+          protezione del sito.
         </p>
-        <ul>
-          <li>
-            <span class="lang-en">
-              Technical browsing data (for example IP address, date and time of access, pages
-              visited), automatically processed by the hosting and security systems.
-            </span>
-            <span class="lang-it">
-              Dati tecnici di navigazione (ad esempio indirizzo IP, data e ora di accesso, pagine
-              visitate), trattati automaticamente dai sistemi di hosting e sicurezza.
-            </span>
-          </li>
-          <li>
-            <span class="lang-en">
-              Data voluntarily provided by the user (for example, when sending an email to
-              info@antartidecoin.com).
-            </span>
-            <span class="lang-it">
-              Dati forniti volontariamente dall’utente (ad esempio inviando una email a
-              info@antartidecoin.com).
-            </span>
-          </li>
-        </ul>
-
-        <h3>
-          <span class="lang-en">2.3 Purpose and legal basis</span>
-          <span class="lang-it">2.3 Finalità e basi giuridiche</span>
-        </h3>
         <p>
-          <span class="lang-en">
-            Personal data are processed exclusively for:
-          </span>
-          <span class="lang-it">
-            I dati personali sono trattati esclusivamente per:
-          </span>
+          Se contatti il progetto via email o tramite futuri moduli di contatto, le informazioni
+          che fornirai (ad esempio nome, indirizzo email, contenuto del messaggio) saranno
+          utilizzate esclusivamente per rispondere alla tua richiesta e per finalità tecniche
+          o di supporto.
         </p>
-        <ul>
-          <li>
-            <span class="lang-en">
-              responding to requests sent by users (legal basis: performance of pre-contractual
-              measures or legitimate interest in managing communications);
-            </span>
-            <span class="lang-it">
-              rispondere alle richieste inviate dagli utenti (base giuridica: esecuzione di misure
-              precontrattuali o legittimo interesse alla gestione delle comunicazioni);
-            </span>
-          </li>
-          <li>
-            <span class="lang-en">
-              ensuring the security and proper functioning of the website (legal basis: legitimate
-              interest in the security and functioning of the service).
-            </span>
-            <span class="lang-it">
-              garantire la sicurezza e il corretto funzionamento del sito (base giuridica:
-              legittimo interesse alla sicurezza e al funzionamento del servizio).
-            </span>
-          </li>
-        </ul>
-
-        <h3>
-          <span class="lang-en">2.4 Data retention</span>
-          <span class="lang-it">2.4 Tempi di conservazione</span>
-        </h3>
         <p>
-          <span class="lang-en">
-            Technical logs are normally retained by the hosting provider for a limited period
-            necessary for security and maintenance. Data provided voluntarily by users (for example
-            via email) are stored for the time strictly necessary to manage the communication and
-            any follow-up.
-          </span>
-          <span class="lang-it">
-            I log tecnici sono normalmente conservati dal provider di hosting per un periodo
-            limitato, necessario a fini di sicurezza e manutenzione. I dati forniti volontariamente
-            dagli utenti (ad esempio via email) sono conservati per il tempo strettamente necessario
-            a gestire la comunicazione e gli eventuali sviluppi.
-          </span>
-        </p>
-
-        <h3>
-          <span class="lang-en">2.5 Rights of data subjects</span>
-          <span class="lang-it">2.5 Diritti degli interessati</span>
-        </h3>
-        <p>
-          <span class="lang-en">
-            Where applicable, users may exercise their rights of access, rectification, erasure,
-            restriction, objection and data portability by contacting the project at
-            info@antartidecoin.com. They also have the right to lodge a complaint with the
-            competent supervisory authority.
-          </span>
-          <span class="lang-it">
-            Ove applicabile, gli utenti possono esercitare i diritti di accesso, rettifica,
-            cancellazione, limitazione, opposizione e portabilità dei dati contattando
-            info@antartidecoin.com. È inoltre possibile proporre reclamo all’autorità di controllo
-            competente.
-          </span>
+          I tuoi dati non saranno venduti a terzi. Eventuali futuri trattamenti ulteriori
+          (ad esempio newsletter, account, attività di marketing) saranno descritti in una
+          versione aggiornata della presente informativa privacy.
         </p>
       </div>
     </section>
 
     <!-- COOKIES -->
     <section id="cookies">
-      <div class="section-title">
-        <span class="lang-en">3. Cookie policy</span>
-        <span class="lang-it">3. Cookie policy</span>
+      <h2>3. Cookie policy / Cookie policy</h2>
+
+      <div class="lang-block">
+        <span class="lang-label">EN</span>
+        <p>
+          This website may use technical cookies that are strictly necessary for basic
+          functions (for example: security, language preferences, session management).
+          These cookies do not store sensitive personal information and are usually set
+          directly by the website.
+        </p>
+        <p>
+          At the current stage, the project does not intentionally use third-party marketing
+          cookies (such as advertising trackers) on the public pages of the site. If in the
+          future analytics or third-party services are enabled, a specific notice and, where
+          required, consent mechanisms will be provided.
+        </p>
       </div>
-      <div class="section-body">
-        <h3>
-          <span class="lang-en">3.1 Type of cookies used</span>
-          <span class="lang-it">3.1 Tipologie di cookie utilizzati</span>
-        </h3>
-        <p>
-          <span class="lang-en">
-            This website is hosted on third-party infrastructure (for example, GitHub Pages). It may
-            use only technical and security-related cookies necessary for the correct display of
-            pages and for basic protections, without profiling users for marketing purposes.
-          </span>
-          <span class="lang-it">
-            Il sito è ospitato su infrastrutture di terze parti (ad esempio GitHub Pages). Potrebbe
-            utilizzare esclusivamente cookie tecnici e legati alla sicurezza, necessari alla corretta
-            visualizzazione delle pagine e a protezioni di base, senza profilare gli utenti a fini di
-            marketing.
-          </span>
-        </p>
 
-        <h3>
-          <span class="lang-en">3.2 Third-party cookies</span>
-          <span class="lang-it">3.2 Cookie di terze parti</span>
-        </h3>
+      <div class="lang-block">
+        <span class="lang-label">IT</span>
         <p>
-          <span class="lang-en">
-            Some technical or analytics cookies may be managed directly by the hosting provider or
-            by services integrated in the website. For more detailed information on such cookies,
-            users are invited to consult the privacy and cookie documentation provided by those
-            third parties.
-          </span>
-          <span class="lang-it">
-            Alcuni cookie tecnici o di analisi possono essere gestiti direttamente dal provider di
-            hosting o da servizi integrati nel sito. Per informazioni più dettagliate su tali cookie,
-            gli utenti sono invitati a consultare la documentazione privacy e cookie messa a
-            disposizione da tali terze parti.
-          </span>
+          Questo sito può utilizzare cookie tecnici strettamente necessari al funzionamento
+          di base (ad esempio: sicurezza, preferenze di lingua, gestione della sessione).
+          Tali cookie non memorizzano informazioni personali sensibili e sono di norma
+          impostati direttamente dal sito.
         </p>
-
-        <h3>
-          <span class="lang-en">3.3 Cookie preferences</span>
-          <span class="lang-it">3.3 Preferenze cookie</span>
-        </h3>
         <p>
-          <span class="lang-en">
-            Most browsers allow users to manage their preferences regarding cookies, for example
-            by deleting existing cookies or blocking certain types. Disabling all cookies could
-            however affect the correct functioning of some websites.
-          </span>
-          <span class="lang-it">
-            La maggior parte dei browser consente agli utenti di gestire le proprie preferenze
-            relative ai cookie, ad esempio cancellando quelli esistenti o bloccando determinate
-            tipologie. La disattivazione totale dei cookie potrebbe tuttavia incidere sul corretto
-            funzionamento di alcuni siti web.
-          </span>
+          Allo stato attuale, il progetto non utilizza intenzionalmente cookie di
+          marketing di terze parti (come tracker pubblicitari) sulle pagine pubbliche
+          del sito. Qualora in futuro venissero attivati servizi di analisi o di terze
+          parti, verrà fornita una specifica informativa e, ove necessario, saranno
+          previsti meccanismi di consenso.
         </p>
       </div>
     </section>
 
     <!-- LEGAL NOTES -->
     <section id="notes">
-      <div class="section-title">
-        <span class="lang-en">4. Legal notes & intellectual property</span>
-        <span class="lang-it">4. Note legali & proprietà intellettuale</span>
+      <h2>4. Legal notes / Note legali</h2>
+
+      <div class="lang-block">
+        <span class="lang-label">EN</span>
+        <p>
+          AntartideCoin (ANTR) is an experimental cryptocurrency project. Holding, using or
+          mining ANTR involves risks, including but not limited to: price volatility,
+          technical failures, software bugs, security incidents, regulatory changes and
+          possible loss of funds.
+        </p>
+        <p>
+          Nothing on this website, in the documentation or in other project materials
+          constitutes financial, investment, legal or tax advice. Each user is solely
+          responsible for their own decisions and should always carry out independent
+          research and, where appropriate, consult qualified professionals.
+        </p>
+        <p>
+          The project team is not responsible for losses or damages resulting from the
+          use or inability to use the website, the software, the pool, the wallet or
+          any other service connected to AntartideCoin, unless required by mandatory law.
+        </p>
       </div>
-      <div class="section-body">
-        <h3>
-          <span class="lang-en">4.1 Intellectual property</span>
-          <span class="lang-it">4.1 Proprietà intellettuale</span>
-        </h3>
-        <p>
-          <span class="lang-en">
-            Unless otherwise indicated, the texts, graphics, logos and other content on this
-            website are owned by the AntartideCoin project or are used under license. Unauthorised
-            reproduction or use of such content is not permitted.
-          </span>
-          <span class="lang-it">
-            Salvo diversa indicazione, testi, grafica, loghi e altri contenuti presenti su questo
-            sito sono di proprietà del progetto AntartideCoin o utilizzati su licenza. Non è
-            consentita la riproduzione o l’utilizzo non autorizzato di tali contenuti.
-          </span>
-        </p>
 
-        <h3>
-          <span class="lang-en">4.2 Links to external websites</span>
-          <span class="lang-it">4.2 Link a siti esterni</span>
-        </h3>
+      <div class="lang-block">
+        <span class="lang-label">IT</span>
         <p>
-          <span class="lang-en">
-            This website may contain links to external resources (for example, explorer,
-            documentation repositories, third-party services). The project has no control over
-            the content or privacy practices of such external sites and cannot be held responsible
-            for them.
-          </span>
-          <span class="lang-it">
-            Il sito può contenere link a risorse esterne (ad esempio explorer, repository di
-            documentazione, servizi di terze parti). Il progetto non ha controllo sui contenuti o
-            sulle pratiche privacy di tali siti esterni e non può esserne ritenuto responsabile.
-          </span>
+          AntartideCoin (ANTR) è un progetto sperimentale di criptovaluta. Detenere, utilizzare
+          o minare ANTR comporta rischi, tra cui a titolo esemplificativo: volatilità di prezzo,
+          malfunzionamenti tecnici, bug software, incidenti di sicurezza, cambi normativi e
+          possibili perdite di fondi.
         </p>
-
-        <h3>
-          <span class="lang-en">4.3 Changes to this page</span>
-          <span class="lang-it">4.3 Modifiche a questa pagina</span>
-        </h3>
         <p>
-          <span class="lang-en">
-            This legal page may be updated over time to reflect changes in the project, in the
-            services offered or in the applicable regulations. The latest updated version will
-            always be published at this address.
-          </span>
-          <span class="lang-it">
-            La presente pagina legale potrà essere aggiornata nel tempo per riflettere eventuali
-            modifiche del progetto, dei servizi offerti o della normativa applicabile. L’ultima
-            versione aggiornata sarà sempre pubblicata a questo indirizzo.
-          </span>
+          Nulla su questo sito, nella documentazione o in altri materiali del progetto
+          costituisce consulenza finanziaria, di investimento, legale o fiscale. Ogni utente
+          è l’unico responsabile delle proprie decisioni e dovrebbe sempre informarsi in modo
+          autonomo e, se necessario, consultare professionisti qualificati.
+        </p>
+        <p>
+          Il team di progetto non è responsabile per eventuali perdite o danni derivanti
+          dall’uso o dall’impossibilità di usare il sito web, il software, la pool, il wallet
+          o qualsiasi altro servizio collegato ad AntartideCoin, salvo i limiti previsti
+          dalle norme inderogabili applicabili.
         </p>
       </div>
     </section>
-
-    <footer>
-      <div class="footer-links">
-        <a href="#terms">
-          <span class="lang-en">Terms of use</span>
-          <span class="lang-it">Termini d’uso</span>
-        </a>
-        <a href="#privacy">
-          <span class="lang-en">Privacy</span>
-          <span class="lang-it">Privacy</span>
-        </a>
-        <a href="#cookies">
-          <span class="lang-en">Cookie policy</span>
-          <span class="lang-it">Cookie policy</span>
-        </a>
-        <a href="#notes">
-          <span class="lang-en">Legal notes</span>
-          <span class="lang-it">Note legali</span>
-        </a>
-        <a href="index.html#top">
-          <span class="lang-en">Back to website</span>
-          <span class="lang-it">Torna al sito</span>
-        </a>
-      </div>
-      <small>
-        © <span id="year"></span> AntartideCoin (ANTR) – 
-        <span class="lang-en">The ice coin</span>
-        <span class="lang-it">La moneta ghiaccio</span>.
-      </small>
-    </footer>
   </main>
+
+  <footer>
+    <p>
+      © <span id="year"></span> AntartideCoin (ANTR) – The ice coin.
+      All rights reserved / Tutti i diritti riservati.
+    </p>
+    <p style="margin-top:4px;">
+      This page is a general legal template and may be updated. It does not replace
+      personalised legal advice. / Questa pagina è un modello legale generale e potrà
+      essere aggiornata. Non sostituisce una consulenza legale personalizzata.
+    </p>
+  </footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    const langButtons = document.querySelectorAll('.lang-btn');
-
-    function setLang(lang) {
-      document.body.setAttribute('data-lang', lang);
-      langButtons.forEach(b => {
-        if (b.dataset.lang === lang) b.classList.add('active');
-        else b.classList.remove('active');
-      });
-    }
-
-    langButtons.forEach(btn => {
-      btn.addEventListener('click', () => setLang(btn.dataset.lang));
-    });
-
-    setLang('it'); // puoi cambiare in 'en' se preferisci l'inglese di default
   </script>
 </body>
 </html>
