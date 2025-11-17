@@ -63,13 +63,11 @@ compatible hardware (ASIC / GPU) can participate using the official pool.
   -u YOUR_ANTR_ADDRESS \
   -p c=ANTR
 cpuminer – high-diff port (powerful ASICs)
-
 ./cpuminer -a scrypt \
   -o stratum+tcp://pool.antartidecoin.org:3533 \
   -u YOUR_ANTR_ADDRESS \
   -p c=ANTR
-
-4. ASIC example (Antminer L3+)
+ASIC (e.g. Antminer L3+)
 
 URL: stratum+tcp://pool.antartidecoin.org:3333
 
@@ -94,7 +92,7 @@ Un miner Scrypt:
 
 cpuminer / miner GPU, oppure
 
-ASIC (es. Antminer L3+, Goldshell e altri dispositivi Scrypt).
+ASIC (es. Antminer L3+, Goldshell e modelli Scrypt simili).
 
 2. Pool ufficiale (Stratum)
 
@@ -111,21 +109,15 @@ Porte (configurazione di esempio):
 3. Esempi di configurazione
 
 cpuminer / miner GPU – porta standard
-
 ./cpuminer -a scrypt \
   -o stratum+tcp://pool.antartidecoin.org:3333 \
   -u TUO_INDIRIZZO_ANTR \
   -p c=ANTR
-
-
 cpuminer – porta ad alta difficoltà (ASIC potenti)
-
 ./cpuminer -a scrypt \
   -o stratum+tcp://pool.antartidecoin.org:3533 \
   -u TUO_INDIRIZZO_ANTR \
   -p c=ANTR
-
-
 ASIC (es. Antminer L3+)
 
 URL: stratum+tcp://pool.antartidecoin.org:3333
@@ -162,8 +154,8 @@ Dettagli completi e versioni ufficiali sono nei PDF di regole e nel sito.
 
 Documentation (PDF, EN/IT)
 
-All official documents are in the docs/
- folder:
+Tutti i documenti ufficiali saranno nella cartella docs/
+:
 
 ANTR_Whitepaper_EN_IT.pdf – Technical and economic overview / panoramica tecnica ed economica
 
@@ -178,11 +170,11 @@ Le versioni aggiornate manterranno gli stessi nomi file.
 
 Status & roadmap (short)
 
-2026: mainnet, stable nodes, official explorer & pool, first desktop wallet.
+2026: mainnet, nodes, official explorer & pool, first desktop wallet.
 
-2027: improved wallet (UI + features), first integrations with Antartide services / shop, public technical docs.
+2027: improved wallet, first integrations with Antartide services / shop, public docs.
 
-2028: ecosystem expansion (services, games, merchant tools, evaluation of first exchange listings).
+2028: ecosystem expansion (services, games, merchant tools, first exchange listings to be evaluated).
 
 Future: planned hard fork on supply/rewards at defined milestones (e.g. around 1B ANTR),
 deeper integration with AntartideShop.com and possible shared governance for treasury.
@@ -199,10 +191,3 @@ or PDFs is financial, legal or tax advice. Always do your own research.
 IT – AntartideCoin è un progetto sperimentale. Detenere o utilizzare ANTR comporta rischi
 (volatilità, problemi tecnici, incertezza normativa). Nulla in questa repo, nel sito o nei PDF
 costituisce consulenza finanziaria, legale o fiscale. Informati sempre in autonomia.
-
-
-
-
-
-
-
