@@ -21,6 +21,46 @@
 The project does **not** run an ICO, IDO or private presale.  
 Il progetto **non** prevede ICO, IDO o prevendita privata.
 
+## Official links / Link ufficiali
+
+- **Website / Sito ufficiale:** https://antartidecoin.com
+- **Explorer:** https://explorer.antartidecoin.org
+- **Official mining pool / Pool ufficiale:** https://pool.antartidecoin.org
+- **Contact / Contatti:** info@antartidecoin.com
+
+---
+
+## Mining ANTR (EN)
+
+AntartideCoin (ANTR) uses the **Scrypt** algorithm. Mining is open: anyone with
+compatible hardware (ASIC / GPU) can participate using the official pool.
+
+### 1. Requirements
+
+- An **ANTR address** (created with the official wallet).
+- A Scrypt miner:
+  - `cpuminer` / GPU miner, or
+  - ASIC miner (e.g. Antminer L3+ and similar).
+
+### 2. Official pool (Stratum)
+
+- URL: `pool.antartidecoin.org`
+- Ports (example configuration):
+  - `3333` – VarDiff, standard port for most miners (GPU / small ASIC).
+  - `3433` – Light VarDiff / low difficulty (when enabled).
+  - `3533` – High-diff port for powerful ASICs.
+
+### 3. Example configuration
+
+**cpuminer / GPU miner – standard port**
+
+```bash
+./cpuminer -a scrypt \
+  -o stratum+tcp://pool.antartidecoin.org:3333 \
+  -u YOUR_ANTR_ADDRESS \
+  -p c=ANTR
+
+
 ---
 
 ## Creator premine & ethical rules (riassunto)
