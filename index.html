@@ -4,41 +4,8 @@
   <meta charset="utf-8">
   <title>AntartideCoin (ANTR) – The ice coin</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-
   <meta name="description" content="AntartideCoin (ANTR) is a Scrypt-based cryptocurrency designed for a real ecosystem: mining, payments and future integration with the global marketplace AntartideShop.com.">
-    <!-- Canonical -->
-  <link rel="canonical" href="https://antartidecoin.com/">
-
-  <!-- Open Graph (Facebook, Telegram, ecc.) -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://antartidecoin.com/">
-  <meta property="og:title" content="AntartideCoin (ANTR) – The ice coin">
-  <meta property="og:description" content="AntartideCoin (ANTR) is a Scrypt-based cryptocurrency designed for a real ecosystem: mining, payments and future integration with the global marketplace AntartideShop.com.">
-  <meta property="og:image" content="https://antartidecoin.com/logo.png">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="AntartideCoin (ANTR) – The ice coin">
-  <meta name="twitter:description" content="AntartideCoin (ANTR) is a Scrypt-based cryptocurrency designed for a real ecosystem: mining, payments and future integration with the global marketplace AntartideShop.com.">
-  <meta name="twitter:image" content="https://antartidecoin.com/logo.png">
-
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://antartidecoin.com/">
-  <meta property="og:title" content="AntartideCoin (ANTR) – The ice coin">
-  <meta property="og:description" content="Scrypt-based cryptocurrency designed for mining, transparency and a real ecosystem: online shop, services and games.">
-  <meta property="og:image" content="https://antartidecoin.com/logo.png">
-  <meta property="og:site_name" content="AntartideCoin">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="AntartideCoin (ANTR) – The ice coin">
-  <meta name="twitter:description" content="Scrypt-based cryptocurrency designed for mining, transparency and a real ecosystem: online shop, services and games.">
-  <meta name="twitter:image" content="https://antartidecoin.com/logo.png">
-
   <link rel="icon" href="favicon.ico" sizes="any">
-
   <style>
     :root {
       --bg-dark: #040b12;
@@ -58,23 +25,14 @@
       margin: 0;
       padding: 0;
     }
-
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background: radial-gradient(circle at top, #06223a 0, #03060b 45%, #010307 100%);
       color: var(--text-main);
       line-height: 1.6;
     }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
 
     .wrapper {
       max-width: 1120px;
@@ -91,7 +49,6 @@
       background: linear-gradient(to bottom, rgba(3,7,16,0.95), rgba(3,7,16,0.75));
       border-bottom: 1px solid rgba(255,255,255,0.04);
     }
-
     .nav {
       max-width: 1120px;
       margin: 0 auto;
@@ -101,13 +58,11 @@
       justify-content: space-between;
       gap: 16px;
     }
-
     .nav-left {
       display: flex;
       align-items: center;
       gap: 10px;
     }
-
     .logo-orb {
       width: 62px;
       height: 62px;
@@ -121,25 +76,22 @@
       align-items: center;
       justify-content: center;
     }
-
-    .logo-img {
-      width: 52px;
-      height: 52px;
+    .logo-orb img {
+      width: 100%;
+      height: 100%;
       border-radius: 50%;
+      object-fit: cover;
     }
-
     .brand-text-main {
       font-weight: 700;
       font-size: 18px;
     }
-
     .brand-text-sub {
       font-size: 11px;
       color: var(--text-muted);
       text-transform: uppercase;
       letter-spacing: 0.15em;
     }
-
     .nav-center {
       display: flex;
       align-items: center;
@@ -147,32 +99,27 @@
       font-size: 13px;
       color: var(--text-muted);
     }
-
     .nav-links {
       display: flex;
       gap: 14px;
     }
-
     .nav-links a {
       padding: 6px 10px;
       border-radius: 999px;
       border: 1px solid transparent;
     }
-
     .nav-links a:hover {
       color: var(--text-main);
       border-color: rgba(255,255,255,0.09);
       background: radial-gradient(circle at top, rgba(40,216,255,0.12), transparent 60%);
     }
-
     .nav-right {
       display: flex;
       align-items: center;
       gap: 8px;
     }
-
     .nav-cta {
-      display: none;
+      display: inline-flex;
     }
 
     .lang-switch {
@@ -183,7 +130,6 @@
       background: rgba(4,13,22,0.9);
       border: 1px solid rgba(255,255,255,0.12);
     }
-
     .lang-btn {
       border: none;
       background: transparent;
@@ -193,7 +139,6 @@
       border-radius: 999px;
       cursor: pointer;
     }
-
     .lang-btn.active {
       background: linear-gradient(135deg, #28d8ff, #4cf1d3);
       color: #021018;
@@ -205,11 +150,9 @@
     .lang-it {
       display: none;
     }
-
     body[data-lang="en"] .lang-en {
       display: inline;
     }
-
     body[data-lang="it"] .lang-it {
       display: inline;
     }
@@ -229,24 +172,20 @@
       transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, border-color 0.15s ease;
       white-space: nowrap;
     }
-
     .btn-primary {
       background: linear-gradient(135deg, #28d8ff, #4cf1d3);
       color: #021018;
       box-shadow: 0 10px 25px rgba(40,216,255,0.32);
     }
-
     .btn-primary:hover {
       transform: translateY(-1px);
       box-shadow: 0 16px 40px rgba(40,216,255,0.45);
     }
-
     .btn-ghost {
       background: rgba(8,27,43,0.8);
       border-color: rgba(255,255,255,0.14);
       color: var(--text-main);
     }
-
     .btn-ghost:hover {
       border-color: var(--accent);
       background: radial-gradient(circle at top, rgba(40,216,255,0.16), rgba(8,27,43,0.9));
@@ -262,7 +201,6 @@
       padding-bottom: 30px;
       align-items: center;
     }
-
     .badge {
       display: inline-flex;
       align-items: center;
@@ -275,49 +213,42 @@
       color: var(--text-muted);
       margin-bottom: 10px;
     }
-
     .badge span {
       font-size: 10px;
       text-transform: uppercase;
       letter-spacing: 0.16em;
       color: var(--accent-soft);
     }
-
     .hero-title {
       font-size: clamp(30px, 4vw, 38px);
       font-weight: 800;
       letter-spacing: 0.02em;
       margin-bottom: 12px;
     }
-
     .hero-title span.gradient {
       background: linear-gradient(135deg, #28d8ff, #4cf1d3);
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
     }
-
     .hero-sub {
       font-size: 14px;
       color: var(--text-muted);
       max-width: 520px;
       margin-bottom: 18px;
     }
-
     .hero-sub small {
       display: block;
       font-size: 11px;
       margin-top: 6px;
       color: #7f8da0;
     }
-
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
       margin-bottom: 18px;
     }
-
     .hero-meta {
       display: flex;
       flex-wrap: wrap;
@@ -325,7 +256,6 @@
       font-size: 11px;
       color: var(--text-muted);
     }
-
     .hero-meta strong {
       color: var(--accent-soft);
       font-weight: 600;
@@ -350,7 +280,6 @@
       position: relative;
       overflow: hidden;
     }
-
     .hero-card::before {
       content: "";
       position: absolute;
@@ -361,31 +290,26 @@
       opacity: 0.9;
       pointer-events: none;
     }
-
     .hero-card-inner {
       position: relative;
       z-index: 1;
     }
-
     .hc-row {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 10px;
     }
-
     .hc-label {
       font-size: 11px;
       text-transform: uppercase;
       letter-spacing: 0.12em;
       color: var(--text-muted);
     }
-
     .hc-value {
       font-size: 13px;
       font-weight: 600;
     }
-
     .hc-chip {
       font-size: 11px;
       padding: 4px 9px;
@@ -393,7 +317,6 @@
       background: rgba(3,12,19,0.8);
       border: 1px solid rgba(255,255,255,0.14);
     }
-
     .hc-main {
       margin-top: 14px;
       padding-top: 12px;
@@ -403,7 +326,6 @@
       gap: 12px;
       align-items: center;
     }
-
     .hc-logo {
       width: 180px;
       height: 180px;
@@ -415,19 +337,16 @@
       box-shadow: 0 0 36px rgba(40,216,255,0.8);
       overflow: hidden;
     }
-
     .hc-logo img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       border-radius: 50%;
     }
-
     .hc-details {
       font-size: 11px;
       color: var(--text-muted);
     }
-
     .hc-grid {
       margin-top: 12px;
       display: grid;
@@ -435,7 +354,6 @@
       gap: 8px;
       font-size: 11px;
     }
-
     .hc-pill {
       padding: 7px 8px;
       border-radius: 999px;
@@ -446,11 +364,9 @@
       justify-content: space-between;
       gap: 6px;
     }
-
     .hc-pill span {
       color: var(--text-muted);
     }
-
     .hc-pill strong {
       color: #e9f4ff;
       font-weight: 600;
@@ -465,17 +381,14 @@
       background: linear-gradient(145deg, rgba(4,15,25,0.96), rgba(2,9,16,0.98));
       box-shadow: 0 18px 40px rgba(0,0,0,0.55);
     }
-
     section + section {
       margin-top: 18px;
     }
-
     .section-title {
       font-size: 18px;
       font-weight: 700;
       margin-bottom: 6px;
     }
-
     .section-sub {
       font-size: 13px;
       color: var(--text-muted);
@@ -495,7 +408,6 @@
       gap: 8px;
       margin-top: 8px;
     }
-
     .pill {
       font-size: 11px;
       padding: 6px 10px;
@@ -511,7 +423,6 @@
       gap: 10px;
       margin-top: 10px;
     }
-
     .card {
       border-radius: var(--radius-lg);
       border: 1px solid rgba(255,255,255,0.10);
@@ -519,12 +430,10 @@
       padding: 10px 11px;
       font-size: 12px;
     }
-
     .card h4 {
       font-size: 13px;
       margin-bottom: 4px;
     }
-
     .card p {
       font-size: 11px;
       color: var(--text-muted);
@@ -536,13 +445,11 @@
       font-size: 12px;
       margin-top: 10px;
     }
-
     .token-table th,
     .token-table td {
       padding: 6px 6px;
       border-bottom: 1px solid rgba(255,255,255,0.08);
     }
-
     .token-table th {
       text-align: left;
       font-size: 11px;
@@ -550,12 +457,10 @@
       letter-spacing: 0.12em;
       color: var(--text-muted);
     }
-
     .token-table td:nth-child(1) {
       color: var(--text-muted);
       width: 55%;
     }
-
     .token-table td:nth-child(2) {
       color: #e9f4ff;
       text-align: right;
@@ -568,14 +473,12 @@
       margin-top: 12px;
       font-size: 11px;
     }
-
     .timeline-item {
       border-radius: var(--radius-lg);
       border: 1px solid rgba(255,255,255,0.09);
       padding: 8px 9px;
       background: rgba(5,16,26,0.97);
     }
-
     .timeline-item h4 {
       font-size: 11px;
       text-transform: uppercase;
@@ -583,7 +486,6 @@
       color: var(--accent-soft);
       margin-bottom: 4px;
     }
-
     .timeline-item strong {
       display: block;
       font-size: 12px;
@@ -595,15 +497,12 @@
       font-size: 12px;
       margin-top: 8px;
     }
-
     .link-list li + li {
       margin-top: 4px;
     }
-
     .link-list a {
       color: var(--accent-soft);
     }
-
     .link-list small {
       color: var(--text-muted);
       margin-left: 4px;
@@ -620,15 +519,30 @@
       font-size: 12px;
       overflow-x: auto;
     }
-
     .steps-list {
       margin-top: 6px;
       padding-left: 18px;
       font-size: 13px;
       color: var(--text-muted);
     }
-
     .steps-list li + li {
+      margin-top: 4px;
+    }
+
+    /* Banner section con immagine grande */
+    .banner-section {
+      text-align: center;
+      background: radial-gradient(circle at top, rgba(40,216,255,0.08), rgba(2,9,16,0.98));
+    }
+    .banner-img {
+      max-width: 520px;
+      margin: 0 auto 10px;
+      border-radius: 28px;
+      box-shadow: 0 20px 55px rgba(0,0,0,0.75);
+    }
+    .banner-section p {
+      font-size: 12px;
+      color: var(--text-muted);
       margin-top: 4px;
     }
 
@@ -643,29 +557,21 @@
       flex-direction: column;
       gap: 4px;
     }
-
     .footer-links {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 10px;
       margin-bottom: 4px;
-    }
-
-    .footer-links a {
       font-size: 11px;
+    }
+    .footer-links a {
       color: var(--accent-soft);
     }
 
-    .footer-links a:hover {
-      text-decoration: underline;
-    }
-
-    /* Responsive */
     @media (max-width: 900px) {
       .nav-center {
         display: none;
       }
-
       .nav-cta {
         display: inline-flex;
       }
@@ -675,19 +581,15 @@
       .hero {
         grid-template-columns: minmax(0,1fr);
       }
-
       .hero-card {
         order: -1;
       }
-
       .cols-2 {
         grid-template-columns: minmax(0,1fr);
       }
-
       .card-grid-3 {
         grid-template-columns: repeat(2, minmax(0,1fr));
       }
-
       .timeline {
         grid-template-columns: repeat(2, minmax(0,1fr));
       }
@@ -698,24 +600,21 @@
       .timeline {
         grid-template-columns: minmax(0, 1fr);
       }
-
       section {
         padding: 16px 14px;
       }
-
       .wrapper {
         padding-inline: 14px;
       }
     }
   </style>
 </head>
-
 <body data-lang="en">
   <header>
     <div class="nav">
       <div class="nav-left">
         <div class="logo-orb">
-          <img src="logo.png" alt="AntartideCoin logo" class="logo-img">
+          <img src="logo.png" alt="AntartideCoin logo">
         </div>
         <div>
           <div class="brand-text-main">AntartideCoin</div>
@@ -727,42 +626,41 @@
       </div>
 
       <div class="nav-center">
-  <nav class="nav-links">
-    <a href="#about">
-      <span class="lang-en">What is</span>
-      <span class="lang-it">Cos’è</span>
-    </a>
-    <a href="#economics">
-      <span class="lang-en">Economics</span>
-      <span class="lang-it">Economia</span>
-    </a>
-    <a href="#creator">
-      <span class="lang-en">Creator rules</span>
-      <span class="lang-it">Regole creatore</span>
-    </a>
-    <a href="#mining">
-      <span class="lang-en">Mining</span>
-      <span class="lang-it">Mining</span>
-    </a>
-    <a href="#wallet">
-      <span class="lang-en">Wallet</span>
-      <span class="lang-it">Wallet</span>
-    </a>
-    <a href="#roadmap">
-      <span class="lang-en">Roadmap</span>
-      <span class="lang-it">Roadmap</span>
-    </a>
-    <a href="start.html">
-      <span class="lang-en">How to start</span>
-      <span class="lang-it">Come iniziare</span>
-    </a>
-    <a href="faq.html">
-      <span class="lang-en">FAQ</span>
-      <span class="lang-it">FAQ</span>
-    </a>
-  </nav>
-</div>
-
+        <nav class="nav-links">
+          <a href="#about">
+            <span class="lang-en">What is</span>
+            <span class="lang-it">Cos’è</span>
+          </a>
+          <a href="#economics">
+            <span class="lang-en">Economics</span>
+            <span class="lang-it">Economia</span>
+          </a>
+          <a href="#creator">
+            <span class="lang-en">Creator rules</span>
+            <span class="lang-it">Regole creatore</span>
+          </a>
+          <a href="#mining">
+            <span class="lang-en">Mining</span>
+            <span class="lang-it">Mining</span>
+          </a>
+          <a href="#wallet">
+            <span class="lang-en">Wallet</span>
+            <span class="lang-it">Wallet</span>
+          </a>
+          <a href="#roadmap">
+            <span class="lang-en">Roadmap</span>
+            <span class="lang-it">Roadmap</span>
+          </a>
+          <a href="start.html">
+            <span class="lang-en">How to start</span>
+            <span class="lang-it">Come iniziare</span>
+          </a>
+          <a href="faq.html">
+            <span class="lang-en">FAQ</span>
+            <span class="lang-it">FAQ</span>
+          </a>
+        </nav>
+      </div>
 
       <div class="nav-right">
         <div class="lang-switch">
@@ -900,6 +798,15 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <!-- BANNER VISIVO CON MONETA 3D -->
+    <section class="banner-section" id="visual">
+      <img src="antartidecoin-banner.png" alt="AntartideCoin 3D coin visual" class="banner-img">
+      <p>
+        <span class="lang-en">Visual concept of AntartideCoin – The ice coin.</span>
+        <span class="lang-it">Concept visivo di AntartideCoin – La moneta ghiaccio.</span>
+      </p>
     </section>
 
     <!-- ABOUT -->
@@ -1685,5 +1592,3 @@
   </script>
 </body>
 </html>
-
-
