@@ -63,12 +63,19 @@
       align-items: center;
       gap: 10px;
     }
-    .logo-img {
-      width: 38px;
-      height: 38px;
-      border-radius: 999px;
-      box-shadow: 0 0 18px rgba(76,241,211,0.65);
-    }
+    .logo-orb {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  padding: 4px;
+  background: radial-gradient(circle at 30% 0, #ffffff, #28d8ff 40%, #06121d 100%);
+  box-shadow:
+    0 0 22px rgba(40,216,255,0.9),
+    0 0 48px rgba(76,241,211,0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   }
     .brand-text-main {
       font-weight: 700;
       font-size: 18px;
@@ -615,15 +622,17 @@
   <header>
     <div class="nav">
       <div class="nav-left">
-        <img src="logo.png" alt="AntartideCoin logo" class="logo-img">
-        <div>
-          <div class="brand-text-main">AntartideCoin</div>
-          <div class="brand-text-sub">
-            <span class="lang-en">The ice coin – ANTR</span>
-            <span class="lang-it">La moneta ghiaccio – ANTR</span>
-          </div>
-        </div>
-      </div>
+  <div class="logo-orb">
+    <img src="logo.png" alt="AntartideCoin logo" class="logo-img">
+  </div>
+  <div>
+    <div class="brand-text-main">AntartideCoin</div>
+    <div class="brand-text-sub">
+      <span class="lang-en">The ice coin – ANTR</span>
+      <span class="lang-it">La moneta ghiaccio – ANTR</span>
+    </div>
+  </div>
+</div>
 
       <div class="nav-center">
         <nav class="nav-links">
@@ -1575,5 +1584,6 @@
   </script>
 </body>
 </html>
+
 
 
