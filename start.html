@@ -1,0 +1,758 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AntartideCoin (ANTR) – How to start</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="How to start with AntartideCoin (ANTR) in a few simple steps. Install the wallet, create your first address, get your first ANTR and read the explorer (EN/IT).">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <style>
+    :root {
+      --bg-dark: #040b12;
+      --bg-section: #061521;
+      --accent: #28d8ff;
+      --accent-soft: #4cf1d3;
+      --text-main: #f7fbff;
+      --text-muted: #a9b7c6;
+      --border-soft: rgba(255,255,255,0.06);
+      --radius-xl: 24px;
+      --radius-lg: 18px;
+      --shadow-soft: 0 18px 45px rgba(0,0,0,0.55);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #06223a 0, #03060b 45%, #010307 100%);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    .wrapper {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 20px 18px 60px;
+    }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(16px);
+      background: linear-gradient(to bottom, rgba(3,7,16,0.95), rgba(3,7,16,0.75));
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+    .nav {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 10px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo-orb {
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      padding: 4px;
+      background: radial-gradient(circle at 30% 0, #ffffff, #28d8ff 40%, #06121d 100%);
+      box-shadow:
+        0 0 22px rgba(40,216,255,0.9),
+        0 0 48px rgba(76,241,211,0.65);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo-orb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .brand-text-main {
+      font-weight: 700;
+      font-size: 18px;
+    }
+    .brand-text-sub {
+      font-size: 11px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+    }
+
+    .nav-center {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .nav-links {
+      display: flex;
+      gap: 14px;
+    }
+    .nav-links a {
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      font-size: 13px;
+    }
+    .nav-links a:hover {
+      color: var(--text-main);
+      border-color: rgba(255,255,255,0.09);
+      background: radial-gradient(circle at top, rgba(40,216,255,0.12), transparent 60%);
+    }
+    .nav-links a.active {
+      color: var(--text-main);
+      border-color: rgba(40,216,255,0.6);
+      background: radial-gradient(circle at top, rgba(40,216,255,0.18), transparent 60%);
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .lang-switch {
+      display: inline-flex;
+      gap: 4px;
+      padding: 2px;
+      border-radius: 999px;
+      background: rgba(4,13,22,0.9);
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+    .lang-btn {
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      font-size: 11px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      cursor: pointer;
+    }
+    .lang-btn.active {
+      background: linear-gradient(135deg, #28d8ff, #4cf1d3);
+      color: #021018;
+      font-weight: 600;
+    }
+
+    /* Language helper */
+    .lang-en,
+    .lang-it { display: none; }
+    body[data-lang="en"] .lang-en { display: inline; }
+    body[data-lang="it"] .lang-it { display: inline; }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 11px 20px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 600;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+      white-space: nowrap;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #28d8ff, #4cf1d3);
+      color: #021018;
+      box-shadow: 0 10px 25px rgba(40,216,255,0.32);
+    }
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 16px 40px rgba(40,216,255,0.45);
+    }
+
+    /* Sections */
+    section {
+      margin-top: 26px;
+      padding: 20px 18px;
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--border-soft);
+      background: linear-gradient(145deg, rgba(4,15,25,0.96), rgba(2,9,16,0.98));
+      box-shadow: var(--shadow-soft);
+    }
+    section + section { margin-top: 18px; }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .section-sub {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+
+    .hero-faq {
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+      gap: 22px;
+      align-items: center;
+    }
+    .hero-faq-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(40,216,255,0.45);
+      background: radial-gradient(circle at left, rgba(40,216,255,0.2), rgba(3,10,19,0.95));
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+    .hero-faq-title {
+      font-size: clamp(26px, 3.4vw, 32px);
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      margin-bottom: 10px;
+    }
+    .hero-faq-title span.gradient {
+      background: linear-gradient(135deg, #28d8ff, #4cf1d3);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .hero-faq-text {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+    .hero-faq-note {
+      margin-top: 8px;
+      font-size: 11px;
+      color: var(--text-muted);
+      border-radius: 999px;
+      border: 1px dashed rgba(255,255,255,0.25);
+      padding: 6px 10px;
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .step-card {
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(255,255,255,0.1);
+      background: radial-gradient(circle at top, rgba(40,216,255,0.10), rgba(2,10,18,0.97));
+      padding: 10px 12px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .step-card h3 {
+      font-size: 13px;
+      margin-bottom: 4px;
+      color: var(--text-main);
+    }
+    .step-number {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--accent-soft);
+      display: block;
+      margin-bottom: 2px;
+    }
+    .step-card ul {
+      margin-top: 4px;
+      padding-left: 18px;
+      font-size: 12px;
+    }
+    .step-card li + li { margin-top: 3px; }
+
+    .two-cols {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 18px;
+      align-items: flex-start;
+    }
+
+    .code-block {
+      margin-top: 6px;
+      padding: 8px 10px;
+      border-radius: 10px;
+      background: rgba(3,10,18,0.95);
+      border: 1px solid rgba(255,255,255,0.16);
+      font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 12px;
+      overflow-x: auto;
+      color: #e9f4ff;
+    }
+
+    .link-list {
+      list-style: none;
+      font-size: 13px;
+      margin-top: 6px;
+    }
+    .link-list li + li { margin-top: 4px; }
+    .link-list a { color: var(--accent-soft); }
+    .link-list small {
+      color: var(--text-muted);
+      margin-left: 4px;
+      font-size: 11px;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 24px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255,255,255,0.14);
+      font-size: 12px;
+      color: var(--text-muted);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 4px;
+      font-size: 12px;
+    }
+    .footer-links a { color: var(--accent-soft); }
+
+    @media (max-width: 900px) {
+      .nav-center { display: none; }
+    }
+    @media (max-width: 800px) {
+      .hero-faq {
+        grid-template-columns: minmax(0,1fr);
+      }
+      .steps-grid {
+        grid-template-columns: minmax(0,1fr);
+      }
+      .two-cols {
+        grid-template-columns: minmax(0,1fr);
+      }
+      section {
+        padding: 16px 14px;
+      }
+      .wrapper {
+        padding-inline: 14px;
+      }
+    }
+  </style>
+</head>
+<body data-lang="en">
+  <header>
+    <div class="nav">
+      <div class="nav-left">
+        <div class="logo-orb">
+          <img src="logo.png" alt="AntartideCoin logo">
+        </div>
+        <div>
+          <div class="brand-text-main">AntartideCoin</div>
+          <div class="brand-text-sub">
+            <span class="lang-en">The ice coin – ANTR</span>
+            <span class="lang-it">La moneta ghiaccio – ANTR</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-center">
+        <nav class="nav-links">
+          <a href="index.html#top">
+            <span class="lang-en">Home</span>
+            <span class="lang-it">Home</span>
+          </a>
+          <a href="start.html" class="active">
+            <span class="lang-en">How to start</span>
+            <span class="lang-it">Come iniziare</span>
+          </a>
+          <a href="faq.html">
+            <span class="lang-en">FAQ</span>
+            <span class="lang-it">FAQ</span>
+          </a>
+          <a href="index.html#docs">
+            <span class="lang-en">Docs</span>
+            <span class="lang-it">Documenti</span>
+          </a>
+          <a href="legal.html">
+            <span class="lang-en">Legal</span>
+            <span class="lang-it">Legale</span>
+          </a>
+        </nav>
+      </div>
+
+      <div class="nav-right">
+        <div class="lang-switch">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="it">IT</button>
+        </div>
+        <a href="index.html#wallet" class="btn btn-primary">
+          <span class="lang-en">Download wallet</span>
+          <span class="lang-it">Scarica il wallet</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrapper">
+    <!-- HERO -->
+    <section class="hero-faq" id="top">
+      <div>
+        <div class="hero-faq-badge">
+          <span>GUIDE</span>
+          <span class="lang-en">How to start with AntartideCoin</span>
+          <span class="lang-it">Come iniziare con AntartideCoin</span>
+        </div>
+        <h1 class="hero-faq-title">
+          <span class="gradient">AntartideCoin (ANTR)</span><br>
+          <span class="lang-en">Start in a few simple steps.</span>
+          <span class="lang-it">Inizia in pochi passi semplici.</span>
+        </h1>
+        <p class="hero-faq-text">
+          <span class="lang-en">
+            This page explains how to prepare your PC, install the wallet, create your first
+            address, receive your first ANTR and verify everything on the explorer.
+          </span>
+          <span class="lang-it">
+            In questa pagina trovi come preparare il PC, installare il wallet, creare il primo
+            indirizzo, ricevere i primi ANTR e verificare tutto sull’explorer.
+          </span>
+        </p>
+        <p class="hero-faq-note">
+          <span class="lang-en">
+            ⚠️ Experimental project, no financial advice. Never risk more than you can afford to lose.
+          </span>
+          <span class="lang-it">
+            ⚠️ Progetto sperimentale, nessuna consulenza finanziaria. Non rischiare mai più di quanto puoi permetterti di perdere.
+          </span>
+        </p>
+      </div>
+
+      <div>
+        <ul class="link-list">
+          <li>
+            <a href="index.html#about">
+              <span class="lang-en">Read: What is AntartideCoin?</span>
+              <span class="lang-it">Leggi: Cos’è AntartideCoin?</span>
+            </a>
+          </li>
+          <li>
+            <a href="faq.html">
+              <span class="lang-en">Go to FAQ page</span>
+              <span class="lang-it">Vai alla pagina FAQ</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://explorer.antartidecoin.org" target="_blank" rel="noopener">
+              <span class="lang-en">Open official explorer</span>
+              <span class="lang-it">Apri l’explorer ufficiale</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- STEPS -->
+    <section id="steps">
+      <div class="section-title">
+        <span class="lang-en">How to start in 5 steps</span>
+        <span class="lang-it">Come iniziare in 5 passi</span>
+      </div>
+      <div class="section-sub">
+        <span class="lang-en">For people who have never used a cryptocurrency before.</span>
+        <span class="lang-it">Per chi non ha mai usato una criptovaluta prima.</span>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <span class="step-number">STEP 1</span>
+          <h3>
+            <span class="lang-en">Prepare your device</span>
+            <span class="lang-it">Prepara il dispositivo</span>
+          </h3>
+          <ul>
+            <li>
+              <span class="lang-en">Use a personal PC that only you can access.</span>
+              <span class="lang-it">Usa un PC personale a cui solo tu hai accesso.</span>
+            </li>
+            <li>
+              <span class="lang-en">Update operating system and antivirus.</span>
+              <span class="lang-it">Aggiorna sistema operativo e antivirus.</span>
+            </li>
+            <li>
+              <span class="lang-en">Create a folder where you will store wallet backups.</span>
+              <span class="lang-it">Crea una cartella dove tenere i backup del wallet.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="step-card">
+          <span class="step-number">STEP 2</span>
+          <h3>
+            <span class="lang-en">Install the official wallet</span>
+            <span class="lang-it">Installa il wallet ufficiale</span>
+          </h3>
+          <ul>
+            <li>
+              <span class="lang-en">Download the installer only from <strong>antartidecoin.com</strong>.</span>
+              <span class="lang-it">Scarica l’installer solo da <strong>antartidecoin.com</strong>.</span>
+            </li>
+            <li>
+              <span class="lang-en">Run the installer and complete the installation.</span>
+              <span class="lang-it">Esegui l’installer e completa l’installazione.</span>
+            </li>
+            <li>
+              <span class="lang-en">Open the wallet and wait for blockchain synchronisation.</span>
+              <span class="lang-it">Apri il wallet e attendi la sincronizzazione della blockchain.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="step-card">
+          <span class="step-number">STEP 3</span>
+          <h3>
+            <span class="lang-en">Create your first address & backup</span>
+            <span class="lang-it">Crea il primo indirizzo & backup</span>
+          </h3>
+          <ul>
+            <li>
+              <span class="lang-en">In the wallet, open the “Receive” section and generate a new address.</span>
+              <span class="lang-it">Nel wallet apri la sezione “Ricevi” e genera un nuovo indirizzo.</span>
+            </li>
+            <li>
+              <span class="lang-en">Save the address in a safe place (file + carta).</span>
+              <span class="lang-it">Salva l’indirizzo in un posto sicuro (file + carta).</span>
+            </li>
+            <li>
+              <span class="lang-en">Make at least one backup following the app instructions.</span>
+              <span class="lang-it">Esegui almeno un backup seguendo le istruzioni dell’app.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="step-card">
+          <span class="step-number">STEP 4</span>
+          <h3>
+            <span class="lang-en">Receive your first ANTR</span>
+            <span class="lang-it">Ricevi i primi ANTR</span>
+          </h3>
+          <ul>
+            <li>
+              <span class="lang-en">Share your ANTR address with a friend or with the creator (for test).</span>
+              <span class="lang-it">Condividi il tuo indirizzo ANTR con un amico o con il creatore (per test).</span>
+            </li>
+            <li>
+              <span class="lang-en">Check that the address is 100% identical before confirming.</span>
+              <span class="lang-it">Controlla che l’indirizzo sia identico al 100% prima di confermare.</span>
+            </li>
+            <li>
+              <span class="lang-en">Wait for the transaction to appear in the wallet.</span>
+              <span class="lang-it">Attendi che la transazione compaia nel wallet.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="step-card">
+          <span class="step-number">STEP 5</span>
+          <h3>
+            <span class="lang-en">Check it on the explorer</span>
+            <span class="lang-it">Controlla sull’explorer</span>
+          </h3>
+          <ul>
+            <li>
+              <span class="lang-en">Open <strong>explorer.antartidecoin.org</strong>.</span>
+              <span class="lang-it">Apri <strong>explorer.antartidecoin.org</strong>.</span>
+            </li>
+            <li>
+              <span class="lang-en">Paste your address in the search bar.</span>
+              <span class="lang-it">Incolla il tuo indirizzo nella barra di ricerca.</span>
+            </li>
+            <li>
+              <span class="lang-en">Compare amount and confirmations with what you see in the wallet.</span>
+              <span class="lang-it">Confronta importo e conferme con quello che vedi nel wallet.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="step-card">
+          <span class="step-number">STEP 6</span>
+          <h3>
+            <span class="lang-en">Optional: mining</span>
+            <span class="lang-it">Opzionale: mining</span>
+          </h3>
+          <p>
+            <span class="lang-en">
+              Mining is for users with technical knowledge and suitable hardware.
+              See the “Mining & official pool” section on the home page.
+            </span>
+            <span class="lang-it">
+              Il mining è per utenti con competenze tecniche e hardware adeguato.
+              Vedi la sezione “Mining & pool ufficiale” nella home.
+            </span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPLORER -->
+    <section id="explorer">
+      <div class="section-title">
+        <span class="lang-en">How to read the explorer</span>
+        <span class="lang-it">Come leggere l’explorer</span>
+      </div>
+      <div class="section-sub">
+        <span class="lang-en">
+          The explorer is a public archive of all blocks and transactions on the chain.
+        </span>
+        <span class="lang-it">
+          L’explorer è un archivio pubblico di tutti i blocchi e le transazioni sulla chain.
+        </span>
+      </div>
+
+      <div class="two-cols">
+        <div>
+          <ul style="font-size:13px; color:var(--text-muted); padding-left:18px;">
+            <li>
+              <strong>Latest blocks</strong> – 
+              <span class="lang-en">the most recent blocks found by miners.</span>
+              <span class="lang-it">gli ultimi blocchi trovati dai miner.</span>
+            </li>
+            <li>
+              <strong>Latest transactions</strong> – 
+              <span class="lang-en">recent transfers between addresses.</span>
+              <span class="lang-it">trasferimenti recenti tra indirizzi.</span>
+            </li>
+            <li>
+              <strong>Address page</strong> – 
+              <span class="lang-en">balance and history of one address.</span>
+              <span class="lang-it">saldo e cronologia di un indirizzo.</span>
+            </li>
+            <li>
+              <strong>Transaction page</strong> – 
+              <span class="lang-en">inputs, outputs, confirmations.</span>
+              <span class="lang-it">input, output, conferme.</span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p style="font-size:13px; color:var(--text-muted);">
+            <span class="lang-en">
+              Example: you receive 10 ANTR in your wallet. On the explorer:
+            </span>
+            <span class="lang-it">
+              Esempio: ricevi 10 ANTR nel wallet. Sull’explorer:
+            </span>
+          </p>
+          <div class="code-block">
+explorer.antartidecoin.org → search → YOUR_ANTR_ADDRESS
+          </div>
+          <p style="font-size:12px; color:var(--text-muted); margin-top:6px;">
+            <span class="lang-en">If the balance and transactions match the wallet, everything is ok.</span>
+            <span class="lang-it">Se saldo e transazioni coincidono col wallet, è tutto ok.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAFETY -->
+    <section id="safety">
+      <div class="section-title">
+        <span class="lang-en">Safety tips</span>
+        <span class="lang-it">Consigli di sicurezza</span>
+      </div>
+      <div class="section-sub">
+        <span class="lang-en">A few basic rules to protect your ANTR.</span>
+        <span class="lang-it">Alcune regole base per proteggere i tuoi ANTR.</span>
+      </div>
+
+      <ul style="font-size:13px; color:var(--text-muted); padding-left:18px;">
+        <li>
+          <span class="lang-en">Download the wallet only from <strong>antartidecoin.com</strong>.</span>
+          <span class="lang-it">Scarica il wallet solo da <strong>antartidecoin.com</strong>.</span>
+        </li>
+        <li>
+          <span class="lang-en">Never share private keys or backup files.</span>
+          <span class="lang-it">Non condividere mai chiavi private o file di backup.</span>
+        </li>
+        <li>
+          <span class="lang-en">Beware of “guaranteed” profits and fake support channels.</span>
+          <span class="lang-it">Diffida dei profitti “garantiti” e dei canali di supporto falsi.</span>
+        </li>
+        <li>
+          <span class="lang-en">Keep at least one backup offline (USB, hard disk not always connected).</span>
+          <span class="lang-it">Tieni almeno un backup offline (chiavetta, disco non sempre collegato).</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-links">
+        <a href="index.html#top">
+          <span class="lang-en">← Back to home</span>
+          <span class="lang-it">← Torna alla home</span>
+        </a>
+        <a href="faq.html">
+          <span class="lang-en">FAQ</span>
+          <span class="lang-it">FAQ</span>
+        </a>
+        <a href="legal.html#terms">
+          <span class="lang-en">Terms of use</span>
+          <span class="lang-it">Termini d’uso</span>
+        </a>
+        <a href="legal.html#privacy">
+          <span class="lang-en">Privacy policy</span>
+          <span class="lang-it">Informativa privacy</span>
+        </a>
+        <a href="legal.html#notes">
+          <span class="lang-en">Legal notes</span>
+          <span class="lang-it">Note legali</span>
+        </a>
+      </div>
+      <small>
+        © <span id="year"></span> AntartideCoin (ANTR) –
+        <span class="lang-en">The ice coin</span>
+        <span class="lang-it">La moneta ghiaccio</span>.
+        <span class="lang-en">All rights reserved.</span>
+        <span class="lang-it">Tutti i diritti riservati.</span>
+      </small>
+      <small style="margin-top:2px;">
+        <span class="lang-en">
+          This page is for educational and informational purposes only and does not
+          constitute financial, investment, legal or tax advice.
+        </span>
+        <span class="lang-it">
+          Questa pagina ha solo finalità informative e didattiche e non costituisce
+          consulenza finanziaria, di investimento, legale o fiscale.
+        </span>
+      </small>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const langButtons = document.querySelectorAll('.lang-btn');
+    function setLang(lang) {
+      document.body.setAttribute('data-lang', lang);
+      langButtons.forEach(b => {
+        if (b.dataset.lang === lang) b.classList.add('active');
+        else b.classList.remove('active');
+      });
+    }
+    langButtons.forEach(btn => {
+      btn.addEventListener('click', () => setLang(btn.dataset.lang));
+    });
+    setLang('en');
+  </script>
+</body>
+</html>
