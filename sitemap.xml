@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home -->
+  <url>
+    <loc>https://antartidecoin.com/</loc>
+    <lastmod>2025-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Pagina legale -->
+  <url>
+    <loc>https://antartidecoin.com/legal.html</loc>
+    <lastmod>2025-11-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Whitepaper -->
+  <url>
+    <loc>https://antartidecoin.com/docs/ANTR_Whitepaper_EN_IT.pdf</loc>
+    <lastmod>2025-11-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Emission & Supply Rules -->
+  <url>
+    <loc>https://antartidecoin.com/docs/ANTR_Emission_and_Supply_Rules_EN_IT.pdf</loc>
+    <lastmod>2025-11-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Official Pool Rules -->
+  <url>
+    <loc>https://antartidecoin.com/docs/ANTR_Official_Pool_Rules_EN_IT.pdf</loc>
+    <lastmod>2025-11-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Rewards & Supply Report n.1 -->
+  <url>
+    <loc>https://antartidecoin.com/docs/ANTR_Rewards_and_Supply_Report_01_EN_IT.pdf</loc>
+    <lastmod>2025-11-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+</urlset>
