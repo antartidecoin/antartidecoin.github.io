@@ -123,11 +123,11 @@
     }
 
     .logo-img {
-  max-width: 52px;
-  height: auto;
-  border-radius: 50%;
-  object-fit: contain;
-}
+      max-width: 52px;
+      height: auto;
+      border-radius: 50%;
+      object-fit: contain;
+    }
 
     .brand-text-main {
       font-weight: 700;
@@ -638,16 +638,32 @@
       text-align: center;
     }
 
+    .banner-coin-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      perspective: 1200px;
+    }
+
     .banner-img {
       max-width: 520px;
       margin: 0 auto 10px;
       border-radius: 28px;
       box-shadow: 0 18px 45px rgba(0,0,0,0.7);
+      transform-style: preserve-3d;
+      transform-origin: 50% 50%;
+      animation: coin-spin 15s infinite ease-in-out;
     }
 
     .banner-section p {
       font-size: 12px;
       color: var(--text-muted);
+    }
+
+    @keyframes coin-spin {
+      0%   { transform: rotateY(0deg); }
+      8%   { transform: rotateY(360deg); }
+      100% { transform: rotateY(360deg); }
     }
 
     /* Footer */
@@ -921,7 +937,9 @@
 
     <!-- VISUAL BANNER CON MONETA 3D -->
     <section class="banner-section" id="visual">
-      <img src="antartidecoin-banner.png" alt="AntartideCoin 3D coin visual" class="banner-img">
+      <div class="banner-coin-wrapper">
+        <img src="antartidecoin-banner.png" alt="AntartideCoin 3D coin visual" class="banner-img">
+      </div>
       <p>
         <span class="lang-en">Visual concept of AntartideCoin – The ice coin.</span>
         <span class="lang-it">Concept visivo di AntartideCoin – La moneta ghiaccio.</span>
@@ -1767,4 +1785,3 @@
   </script>
 </body>
 </html>
-
